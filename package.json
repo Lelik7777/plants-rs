@@ -4,7 +4,8 @@
   "description": "education project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "sass src/sass/style.scss src/sass/style.css"
   },
   "repository": {
     "type": "git",
