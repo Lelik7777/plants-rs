@@ -1,0 +1,20 @@
+{
+  "name": "plants-rs",
+  "version": "1.0.0",
+  "description": "education project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "sass --watch src/sass/style.scss src/sass/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lelik7777/plants.git"
+  },
+  "author": "Lelik7777",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lelik7777/plants/issues"
+  },
+  "homepage": "https://github.com/Lelik7777/plants#readme"
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--for support IE9 or IE8-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--google fonts: Inika 400,700 and Inter 400,700-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap"
+          rel="stylesheet">
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="./src/img/logo/logo_vector.svg">
+    <link rel="stylesheet" href="./src/sass/style.css">
+    <title>Plants-rs</title>
+</head>
+<body>
+<header class="header">
+    <div class="wrapper">
+        <div class="header__logo">
+            <a href="#">
+                <object class="logo-object" data="src/img/logo/logo_vector.svg" type="image/svg+xml">
+                    <!--if browser don`t support svg-->
+                    <img src="src/img/logo/logo_vector.png" alt="logo">
+                </object>
+
+                <span class="logo-text">Plants</span>
+            </a>
+        </div>
+        <nav class="header__navigation">
+            <ul class="navigation">
+                <li class="navigation__item">
+                    <a class="navigation__link active" href="#home">Home</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#about-us">About us</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#service">Service</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#price">Price</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#contacts">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <section class="welcome">
+        <div class="wrapper">
+            <img src="src/img/welcome/leafs.png" alt="leaf">
+            <div class="welcome__content">
+                <h1 class="welcome__title">
+                    We grow
+                    <span class="title_emphasized">plants</span>
+                    and give you oxygen
+                </h1>
+                <p class="welcome__text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s.
+                </p>
+                <div class="welcome__btn">
+                    <button class="btn btn_bordered">LEARN MORE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="wrapper">
+            <div class="about__content">
+                <h2 class="title about__title">
+                    We are
+                    <span class="title_emphasized">professional experienced</span>
+                    gardeners
+                </h2>
+                <p class="about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                    a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+            </div>
+            <img src="src/img/about/houseplant%201.png" alt="house plant">
+        </div>
+    </section>
+    <section class="service">
+        <div class="wrapper">
+            <div class="service__content">
+                <h2 class="title service__title">Service and our projects</h2>
+                <div class="service__btns">
+                    <button class="btn btn_bordered">Gardens</button>
+                    <button class="btn btn_bordered">Lawn</button>
+                    <button class="btn btn_bordered">Planting</button>
+                </div>
+            </div>
+            <div class="layout-3-column">
+                <div class="service__item">
+                    <img src="src/img/service/service-garden-woman.png" alt="garden care woman">
+                    <h3 class="title service__title">Carden care</h3>
+                    <p class="service__text">Lorem Ipsum has been the industry</p>
+                </div>
+                <div class="service__item">
+                    <img src="src/img/service/service-planting-fruit.png" alt="planting fruit">
+                    <h3 class="title service__title">Planting</h3>
+                    <p class="service__text">Lorem Ipsum has been the industry</p>
+                </div>
+                <div class="service__item">
+                    <img src="src/img/service/service-lawn.png" alt="lawn care">
+                    <h3 class="title service__title">Law care</h3>
+                    <p class="service__text">Lorem Ipsum has been the industry</p>
+                </div>
+            </div>
+            <div class="layout-3-column">
+                <div class="service__item">
+                    <img src="src/img/service/service-planting-girl.png" alt="planting girl">
+                    <h3 class="title service__title">Planting</h3>
+                    <p class="service__text">Lorem Ipsum has been the industry</p>
+                </div>
+                <div class="service__item">
+                    <img src="src/img/service/service-garden-flowerpots.png" alt="garden care flowerpots">
+                    <h3 class="title service__title">Garden care</h3>
+                    <p class="service__text">Lorem Ipsum has been the industry</p>
+                </div>
+                <div class="service__item">
+                    <img src="src/img/service/service-planting-cactus.png" alt="planting cactus">
+                    <h3 class="title service__title">Planting</h3>
+                    <p class="service__text">Lorem Ipsum has been the industry</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="prices">
+        <div class="wrapper">
+            <div class="prices__content-left">
+                <h2 class="title prices__title">Prices</h2>
+                <ul class="prices__items">
+                    <li class="prices__item">
+                        <button class="prices__btn">
+                            <h3 class="title btn-title">Basics</h3>
+                            <object class="accord-object" data="src/img/icons/accordion_btn.svg" type="image/svg+xml">
+                                <!--if browser don`t support svg-->
+                                <img src="src/img/icons/accordion_btn.png" alt="accordion">
+                            </object>
+                        </button>
+                    </li>
+                    <li class="prices__item">
+                        <button class="prices__btn">
+                            <h3 class="title btn-title">Standard</h3>
+                            <object class="accord-object" data="src/img/icons/accordion_btn.svg" type="image/svg+xml">
+                                <!--if browser don`t support svg-->
+                                <img src="src/img/icons/accordion_btn.png" alt="accordion">
+                            </object>
+                        </button>
+                    </li>
+                    <li class="prices__item">
+                        <button class="prices__btn">
+                            <h3 class="title btn-title">Pro care</h3>
+                            <object class="accord-object" data="src/img/icons/accordion_btn.svg" type="image/svg+xml">
+                                <!--if browser don`t support svg-->
+                                <img src="src/img/icons/accordion_btn.png" alt="accordion">
+                            </object>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="prices__content-right">
+                <h2 class="title prices__title">
+                    Our best
+                    <span class="title_emphasized">gardeners</span>
+                    are ready to help you
+                </h2>
+                <div class="prices__btn">
+                    <button class="btn btn_bordered">
+                        Contact us
+                    </button>
+                </div>
+                <img src="src/img/prices/leafs.png" alt="leaf">
+            </div>
+        </div>
+    </section>
+    <section class="contact-us">
+        <div class="wrapper">
+            <img src="src/img/contacts/contact_woman%201.png" alt="woman">
+            <div class="contact-us__content">
+                <h2 class="title contact-us__title">
+                    Contact us
+                </h2>
+                <div class="contact-us__btn">
+                    <button class="btn-contact-us">
+                        <span class="btn-contact-us__title">City</span>
+                        <object class="accord-object-contact" data="src/img/icons/accordion_btn-contact.svg" type="image/svg+xml">
+                            <!--if browser don`t support svg-->
+                            <img src="src/img/icons/accordion_btn-contact.png" alt="accordion">
+                        </object>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+<div class="footer__copyright" style="display: flex">
+    <span class="copyright_item">&copy;</span>
+    <span class="copyright_item">2022</span>
+    <span class="copyright_item"><a href="#" target="_blank">github</a></span>
+</div>
+    <a class="footer_ref" href="#" target="_blank">Rolling Scopes School</a>
+    <ul class="footer__list">
+        <li class="footer__item">
+            <a href="#"><img src="src/img/icons/inst%201.svg" alt="instagram"></a>
+        </li>
+        <li class="footer__item">
+            <a href="#"><img src="src/img/icons/fb%201.svg" alt="facebook"></a>
+        </li>
+        <li class="footer__item">
+            <a href="#"><img src="src/img/icons/tw%201.svg" alt="twitter"></a>
+        </li>
+        <li class="footer__item">
+            <a href="#"><img src="src/img/icons/pinterest%201.svg" alt="pinterest"></a>
+        </li>
+    </ul>
+</footer>
+</body>
+</html>
