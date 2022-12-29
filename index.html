@@ -139,29 +139,38 @@
                     <li class="prices__item">
                         <button class="prices__btn">
                             <h3 class="title btn-title">Basics</h3>
-                            <img src="src/img/icons/accordion_btn.svg" alt="accordion">
+                            <object class="accord-object" data="src/img/icons/accordion_btn.svg" type="image/svg+xml">
+                                <!--if browser don`t support svg-->
+                                <img src="src/img/icons/accordion_btn.png" alt="accordion">
+                            </object>
                         </button>
                     </li>
                     <li class="prices__item">
                         <button class="prices__btn">
                             <h3 class="title btn-title">Standard</h3>
-                            <img src="src/img/icons/accordion_btn.svg" alt="accordion">
+                            <object class="accord-object" data="src/img/icons/accordion_btn.svg" type="image/svg+xml">
+                                <!--if browser don`t support svg-->
+                                <img src="src/img/icons/accordion_btn.png" alt="accordion">
+                            </object>
                         </button>
                     </li>
                     <li class="prices__item">
                         <button class="prices__btn">
                             <h3 class="title btn-title">Pro care</h3>
-                            <img src="src/img/icons/accordion_btn.svg" alt="accordion">
+                            <object class="accord-object" data="src/img/icons/accordion_btn.svg" type="image/svg+xml">
+                                <!--if browser don`t support svg-->
+                                <img src="src/img/icons/accordion_btn.png" alt="accordion">
+                            </object>
                         </button>
                     </li>
                 </ul>
             </div>
             <div class="prices__content-right">
-                 <h2 class="title prices__title">
-                     Our best
-                     <span class="title_emphasized">gardeners</span>
-                     are ready to help you
-                 </h2>
+                <h2 class="title prices__title">
+                    Our best
+                    <span class="title_emphasized">gardeners</span>
+                    are ready to help you
+                </h2>
                 <div class="prices__btn">
                     <button class="btn btn_bordered">
                         Contact us
@@ -171,9 +180,47 @@
             </div>
         </div>
     </section>
+    <section class="contact-us">
+        <div class="wrapper">
+            <img src="src/img/contacts/contact_woman%201.png" alt="woman">
+            <div class="contact-us__content">
+                <h2 class="title contact-us__title">
+                    Contact us
+                </h2>
+                <div class="contact-us__btn">
+                    <button class="btn-contact-us">
+                        <span class="btn-contact-us__title">City</span>
+                        <object class="accord-object-contact" data="src/img/icons/accordion_btn-contact.svg" type="image/svg+xml">
+                            <!--if browser don`t support svg-->
+                            <img src="src/img/icons/accordion_btn-contact.png" alt="accordion">
+                        </object>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
-<footer>
-
+<footer class="footer">
+<div class="footer__copyright" style="display: flex">
+    <span class="copyright_item">&copy;</span>
+    <span class="copyright_item">2022</span>
+    <span class="copyright_item"><a href="#" target="_blank">github</a></span>
+</div>
+    <a class="footer_ref" href="#" target="_blank">Rolling Scopes School</a>
+    <ul class="footer__list">
+        <li class="footer__item">
+            <a href="#"><img src="src/img/icons/inst%201.svg" alt="instagram"></a>
+        </li>
+        <li class="footer__item">
+            <a href="#"><img src="src/img/icons/fb%201.svg" alt="facebook"></a>
+        </li>
+        <li class="footer__item">
+            <a href="#"><img src="src/img/icons/tw%201.svg" alt="twitter"></a>
+        </li>
+        <li class="footer__item">
+            <a href="#"><img src="src/img/icons/pinterest%201.svg" alt="pinterest"></a>
+        </li>
+    </ul>
 </footer>
 </body>
 </html>
