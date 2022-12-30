@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "style": "sass --watch src/sass/style.scss src/sass/style.css"
+    "style": "sass src/sass/style.scss src/sass/style.css"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Lelik7777/plants/issues"
   },
-  "homepage": "https://github.com/Lelik7777/plants#readme"
+  "homepage": "https://github.com/Lelik7777/plants#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }
