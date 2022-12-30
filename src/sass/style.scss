@@ -1,4 +1,4 @@
-@import "./node_modules/normalize.css/normalize.css";
+@import "base/normalize";
 
 //abstracts
 @import "abstracts/constants";
@@ -7,3 +7,5 @@
 
 //base
 @import "base/base";
+
+
