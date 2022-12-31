@@ -309,6 +309,10 @@ section, article, footer, header {
 * {
   box-sizing: border-box; }
 
+a {
+  text-decoration: none;
+  color: #000; }
+
 ul {
   list-style: none;
   padding-left: 0;
@@ -320,7 +324,7 @@ h1, h2, h3, p {
 body, h1, h3 {
   font-family: 'Inter', 'Verdana', sans-serif; }
 
-h2 {
+h2, .header {
   font-family: 'Inika', 'Verdana', sans-serif; }
 
 html {
@@ -360,11 +364,26 @@ p {
   color: #499A18; }
 
 .wrapper {
-  width: 1440px;
+  max-width: 1440px;
   margin: auto;
-  background-color: #EDF2EC; }
+  background-color: #EDF2EC;
+  padding: 0 11rem; }
+  @media (max-width: 380px) {
+    .wrapper {
+      padding: 0 2.5rem; } }
 
 .wrapper_bg-none {
   background-color: #fff; }
+
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 42px 11rem; }
+
+.navigation {
+  display: flex; }
 
 /*# sourceMappingURL=style.css.map */

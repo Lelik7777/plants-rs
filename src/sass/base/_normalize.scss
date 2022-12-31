@@ -360,6 +360,11 @@ section, article, footer, header {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 ul {
   list-style: none;
   padding-left: 0;
