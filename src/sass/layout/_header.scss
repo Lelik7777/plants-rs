@@ -1,0 +1,14 @@
+.header {
+  @extend %font-family-beta;
+  @include font($size: 1.6rem, $height: 5rem);
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 42px $padding-side-desktop;
+}
+

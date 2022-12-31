@@ -1,0 +1,18 @@
+.navigation {
+  display: flex;
+}
+
+.navigation__link {
+  padding: 0 46px 0 0;
+  @extend %transition;
+
+  &:hover {
+    @include active;
+  }
+
+  .navigation__item:last-child & {
+    padding-right: 0;
+  }
+
+
+}

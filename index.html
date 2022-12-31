@@ -17,7 +17,7 @@
 </head>
 <body>
 <header class="header">
-    <div class="wrapper">
+    <div class="wrapper header__wrapper">
         <div class="header__logo">
             <a href="#">
                 <object class="logo-object" data="src/img/logo/logo_vector.svg" type="image/svg+xml">
@@ -30,7 +30,7 @@
         </div>
         <nav class="header__navigation">
             <ul class="navigation">
-                <li class="navigation__item">
+                <li class="navigation__item ">
                     <a class="navigation__link active" href="#home">Home</a>
                 </li>
                 <li class="navigation__item">
@@ -42,7 +42,7 @@
                 <li class="navigation__item">
                     <a class="navigation__link" href="#price">Price</a>
                 </li>
-                <li class="navigation__item">
+                <li class="navigation__item contact">
                     <a class="navigation__link" href="#contacts">Contacts</a>
                 </li>
             </ul>
@@ -70,7 +70,7 @@
         </div>
     </section>
     <section class="about">
-        <div class="wrapper">
+        <div class="wrapper wrapper_bg-none">
             <div class="about__content">
                 <h2 class="title about__title">
                     We are
@@ -98,7 +98,7 @@
             <div class="layout-3-column">
                 <div class="service__item">
                     <img src="src/img/service/service-garden-woman.png" alt="garden care woman">
-                    <h3 class="title service__title">Carden care</h3>
+                    <hз class="title service__title">Carden care</hз>
                     <p class="service__text">Lorem Ipsum has been the industry</p>
                 </div>
                 <div class="service__item">
@@ -132,7 +132,7 @@
         </div>
     </section>
     <section class="prices">
-        <div class="wrapper">
+        <div class="wrapper wrapper_bg-none">
             <div class="prices__content-left">
                 <h2 class="title prices__title">Prices</h2>
                 <ul class="prices__items">
@@ -190,7 +190,8 @@
                 <div class="contact-us__btn">
                     <button class="btn-contact-us">
                         <span class="btn-contact-us__title">City</span>
-                        <object class="accord-object-contact" data="src/img/icons/accordion_btn-contact.svg" type="image/svg+xml">
+                        <object class="accord-object-contact" data="src/img/icons/accordion_btn-contact.svg"
+                                type="image/svg+xml">
                             <!--if browser don`t support svg-->
                             <img src="src/img/icons/accordion_btn-contact.png" alt="accordion">
                         </object>
@@ -201,26 +202,28 @@
     </section>
 </main>
 <footer class="footer">
-<div class="footer__copyright" style="display: flex">
-    <span class="copyright_item">&copy;</span>
-    <span class="copyright_item">2022</span>
-    <span class="copyright_item"><a href="#" target="_blank">github</a></span>
-</div>
-    <a class="footer_ref" href="#" target="_blank">Rolling Scopes School</a>
-    <ul class="footer__list">
-        <li class="footer__item">
-            <a href="#"><img src="src/img/icons/inst%201.svg" alt="instagram"></a>
-        </li>
-        <li class="footer__item">
-            <a href="#"><img src="src/img/icons/fb%201.svg" alt="facebook"></a>
-        </li>
-        <li class="footer__item">
-            <a href="#"><img src="src/img/icons/tw%201.svg" alt="twitter"></a>
-        </li>
-        <li class="footer__item">
-            <a href="#"><img src="src/img/icons/pinterest%201.svg" alt="pinterest"></a>
-        </li>
-    </ul>
+    <div class="wrapper wrapper_bg-none">
+        <div class="footer__copyright" style="display: flex">
+            <span class="copyright_item">&copy;</span>
+            <span class="copyright_item">2022</span>
+            <span class="copyright_item"><a href="#" target="_blank">github</a></span>
+        </div>
+        <a class="footer_ref" href="#" target="_blank">Rolling Scopes School</a>
+        <ul class="footer__list">
+            <li class="footer__item">
+                <a href="#"><img src="src/img/icons/inst%201.svg" alt="instagram"></a>
+            </li>
+            <li class="footer__item">
+                <a href="#"><img src="src/img/icons/fb%201.svg" alt="facebook"></a>
+            </li>
+            <li class="footer__item">
+                <a href="#"><img src="src/img/icons/tw%201.svg" alt="twitter"></a>
+            </li>
+            <li class="footer__item">
+                <a href="#"><img src="src/img/icons/pinterest%201.svg" alt="pinterest"></a>
+            </li>
+        </ul>
+    </div>
 </footer>
 </body>
 </html>

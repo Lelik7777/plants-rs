@@ -1,4 +1,41 @@
 html {
   //10px===62,5%
   font-size: 62.5%;
+
+}
+
+body {
+  @extend %font-family-alpha;
+  @include font($size: 1.6rem, $weight: $regular, $height: 3rem);
+  color: $color-dark;
+  /*background-color: #F5F5F5;*/
+}
+
+h1 {
+  @extend %font-family-alpha;
+  @include font($size: 4.5rem, $weight: $bold, $height: 5rem);
+  color: $color-text-secondary;
+}
+
+h2 {
+  @extend %font-family-beta;
+  @include font($size: 4rem, $weight: $bold, $height: 5rem);
+}
+
+h3 {
+  @extend %font-family-alpha;
+  @include font($size: 2rem, $weight: $bold, $height: 2rem);
+  color: $color-beta;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.title_emphasized {
+  color: $color-alpha;
+}
+
+.active {
+  @include active;
 }
