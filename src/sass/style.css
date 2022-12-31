@@ -398,6 +398,9 @@ p {
   align-items: center;
   padding: 42px 11rem; }
 
+.header__logo {
+  line-height: 2rem; }
+
 .navigation {
   display: flex; }
 
