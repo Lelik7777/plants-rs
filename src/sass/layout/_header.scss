@@ -1,5 +1,6 @@
 .header {
   @extend %font-family-beta;
+  @include font($size: 1.6rem, $height: 5rem);
 }
 
 .header__wrapper {

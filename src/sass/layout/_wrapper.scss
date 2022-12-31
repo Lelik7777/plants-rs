@@ -3,6 +3,7 @@
   margin: auto;
   background-color: $color-background;
   padding: 0 $padding-side-desktop;
+  border: 1px solid black;
 
   @include media-mobile {
     padding: 0 $padding-side-mobile;

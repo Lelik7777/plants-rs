@@ -5,3 +5,9 @@
 %font-family-beta {
   font-family: 'Inika', 'Verdana', sans-serif;
 }
+//transition: <property> <duration> <timing-function> <delay>;
+//ease-out
+//Указывает, что интерполяция начинается резко, а затем постепенно замедляется к концу.
+%transition {
+  transition: all .5s ease-out;
+}

@@ -8,6 +8,7 @@ body {
   @extend %font-family-alpha;
   @include font($size: 1.6rem, $weight: $regular, $height: 3rem);
   color: $color-dark;
+  /*background-color: #F5F5F5;*/
 }
 
 h1 {
@@ -33,4 +34,8 @@ p {
 
 .title_emphasized {
   color: $color-alpha;
+}
+
+.active {
+  @include active;
 }

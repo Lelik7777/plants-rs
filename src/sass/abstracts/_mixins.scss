@@ -5,6 +5,11 @@
   line-height: $height;
 }
 
+@mixin active {
+  color: $color-beta;
+  font-weight: $bold;
+}
+
 @mixin media-tablet {
   @media (max-width: $tablet-width) {
     @content;
