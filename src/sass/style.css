@@ -392,17 +392,30 @@ p {
 
 .header__wrapper {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding: 42px 11rem; }
 
 .header__logo {
   line-height: 2rem; }
 
+.welcome__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.welcome__image {
+  max-width: 44.88rem; }
+
+.image-welcome {
+  height: 100%; }
+
 .navigation {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
 
 .navigation__link {
   padding: 0 46px 0 0; }
