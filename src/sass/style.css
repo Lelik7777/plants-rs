@@ -331,7 +331,8 @@ h2, .header {
   transition: all .5s ease-out; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   font-style: normal;
@@ -406,6 +407,9 @@ p {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap; }
+
+.welcome__content {
+  max-width: 54.9rem; }
 
 .welcome__image {
   max-width: 44.88rem; }

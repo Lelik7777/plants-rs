@@ -2,6 +2,9 @@
   @include flex;
   flex-wrap: wrap;
 }
+.welcome__content{
+  max-width: 54.9rem;
+}
 .welcome__image{
   max-width: 44.88rem;
 }
