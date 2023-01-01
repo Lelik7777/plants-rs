@@ -1,0 +1,10 @@
+.welcome__wrapper{
+  @include flex;
+  flex-wrap: wrap;
+}
+.welcome__image{
+  max-width: 44.88rem;
+}
+.image-welcome{
+  height: 100%;
+}
