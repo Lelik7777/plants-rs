@@ -1,14 +1,37 @@
-.btn {
-  padding: 12px 30px;
-  background-color: inherit;
-  border-radius: 5px;
+.btn-1 {
+  @extend %font-family-alpha;
   @include font($size: 1.6rem, $height: 2rem);
+  padding: 14px 27px;
+  border-radius: 1rem;
+  background-color: inherit;
+  color: $color-dark;
+
+  &_bordered {
+    border: 2px solid $color-beta;
+  }
+
+  &_colored {
+    background-color: $color-beta;
+    border: 2px solid $color-beta;
+  }
+}
+
+
+.btn-2 {
+  padding: 12px 40px;
+  background-color: inherit;
+  border-radius: 0.5rem;
+  @include font($size: 2rem, $height: 2.6rem);
+  @extend %font-family-beta;
+  color: $color-beta;
 
   &_bordered {
     border: 1px solid $color-beta;
   }
-  &_colored{
+
+  &_colored {
     background-color: $color-beta;
-    border: 0;
+    border: 1px solid $color-beta;
   }
 }
+

@@ -311,7 +311,7 @@ section, article, footer, header {
 
 a {
   text-decoration: none;
-  color: #000; }
+  color: inherit; }
 
 ul {
   list-style: none;
@@ -321,10 +321,10 @@ ul {
 h1, h2, h3, p {
   margin: 0; }
 
-body, h1, h3 {
+body, h1, h3, .btn-1 {
   font-family: 'Inter', 'Verdana', sans-serif; }
 
-h2, .header {
+h2, .btn-2, .header {
   font-family: 'Inika', 'Verdana', sans-serif; }
 
 .navigation__link {
@@ -372,19 +372,35 @@ p {
   color: #E06733;
   font-weight: 700; }
 
-.btn {
-  padding: 12px 30px;
-  background-color: inherit;
-  border-radius: 5px;
+.btn-1 {
   font-style: normal;
   font-weight: 400;
   font-size: 1.6rem;
-  line-height: 2rem; }
-  .btn_bordered {
-    border: 1px solid #E06733; }
-  .btn_colored {
+  line-height: 2rem;
+  padding: 14px 27px;
+  border-radius: 1rem;
+  background-color: inherit;
+  color: #000; }
+  .btn-1_bordered {
+    border: 2px solid #E06733; }
+  .btn-1_colored {
     background-color: #E06733;
-    border: 0; }
+    border: 2px solid #E06733; }
+
+.btn-2 {
+  padding: 12px 40px;
+  background-color: inherit;
+  border-radius: 0.5rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: #E06733; }
+  .btn-2_bordered {
+    border: 1px solid #E06733; }
+  .btn-2_colored {
+    background-color: #E06733;
+    border: 1px solid #E06733; }
 
 .wrapper {
   max-width: 1440px;
@@ -439,6 +455,9 @@ p {
 .navigation {
   display: flex;
   flex-wrap: wrap; }
+
+.navigation__item {
+  color: #010201; }
 
 .navigation__link {
   padding: 0 4.6rem 0 0; }
