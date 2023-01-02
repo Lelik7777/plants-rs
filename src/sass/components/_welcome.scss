@@ -1,0 +1,33 @@
+.welcome {
+  padding: 6.2rem 10.9rem;
+  background-color: $color-background;
+
+
+}
+
+.welcome__wrapper {
+  @include flex;
+  height: 100%;
+}
+
+.image-welcome {
+  max-width: 44.88rem;
+}
+
+.welcome__content {
+  @extend %font-family-alpha;
+  margin-left: 22.42rem;
+}
+.welcome__title{
+  @include font($size:4.5rem,$height:5rem,$weight:$bold);
+  margin-bottom: 42px;
+}
+.welcome__text{
+@include font($size:2rem,$height:3.5rem);
+  margin-bottom: 48px;
+}
+.welcome__btn{
+  margin-bottom: 5px;
+}
+
+
