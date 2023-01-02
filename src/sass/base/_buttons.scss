@@ -1,0 +1,14 @@
+.btn {
+  padding: 12px 30px;
+  background-color: inherit;
+  border-radius: 5px;
+  @include font($size: 1.6rem, $height: 2rem);
+
+  &_bordered {
+    border: 1px solid $color-beta;
+  }
+  &_colored{
+    background-color: $color-beta;
+    border: 0;
+  }
+}

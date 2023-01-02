@@ -372,6 +372,20 @@ p {
   color: #E06733;
   font-weight: 700; }
 
+.btn {
+  padding: 12px 30px;
+  background-color: inherit;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem; }
+  .btn_bordered {
+    border: 1px solid #E06733; }
+  .btn_colored {
+    background-color: #E06733;
+    border: 0; }
+
 .wrapper {
   max-width: 1440px;
   margin: auto;
@@ -397,10 +411,15 @@ p {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 42px 11rem; }
+  padding: 42px 111px 42px 108px; }
 
 .header__logo {
-  line-height: 2rem; }
+  line-height: 2rem;
+  padding-bottom: 1rem; }
+
+.logo-object {
+  width: 2rem;
+  height: 2rem; }
 
 .welcome__wrapper {
   display: flex;
@@ -422,7 +441,7 @@ p {
   flex-wrap: wrap; }
 
 .navigation__link {
-  padding: 0 46px 0 0; }
+  padding: 0 4.6rem 0 0; }
   .navigation__link:hover {
     color: #E06733;
     font-weight: 700; }
