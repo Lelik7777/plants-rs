@@ -324,7 +324,7 @@ h1, h2, h3, p {
 body, h1, h3, .btn-1, .welcome__content {
   font-family: 'Inter', 'Verdana', sans-serif; }
 
-h2, .btn-2, .header {
+h2, .btn-2, .header, .logo-text {
   font-family: 'Inika', 'Verdana', sans-serif; }
 
 .navigation__link {
@@ -339,8 +339,7 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 3rem;
-  color: #000;
-  /*background-color: #F5F5F5;*/ }
+  color: #000; }
 
 h1 {
   font-style: normal;
@@ -361,9 +360,6 @@ h3 {
   font-size: 2rem;
   line-height: 2rem;
   color: #E06733; }
-
-p {
-  font-size: 2rem; }
 
 .title_emphasized {
   color: #499A18; }
@@ -412,22 +408,21 @@ p {
   font-size: 1.6rem;
   line-height: 5rem;
   background-color: #EDF2EC;
-  padding: 42px 111px 42px 108px; }
+  padding: 4.2rem 11.1rem 4.2rem 10.8rem; }
 
 .header__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap; }
+  align-items: center; }
 
-.header__logo {
-  line-height: 2rem;
-  padding-bottom: 1rem; }
+.logo-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.1rem; }
 
 .logo-object {
-  width: 2rem;
-  height: 2rem; }
+  max-width: 2rem; }
 
 .navigation {
   display: flex;
@@ -452,19 +447,16 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%; }
+  flex-wrap: wrap; }
 
 .image-welcome {
   max-width: 44.88rem; }
 
 .welcome__content {
-  margin-left: 22.42rem; }
+  margin-left: 22.42rem;
+  max-width: 549px; }
 
 .welcome__title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 4.5rem;
-  line-height: 5rem;
   margin-bottom: 42px; }
 
 .welcome__text {
@@ -476,5 +468,8 @@ p {
 
 .welcome__btn {
   margin-bottom: 5px; }
+
+.about {
+  padding: 9.3rem 10.9rem 9.4rem 10.9rem; }
 
 /*# sourceMappingURL=style.css.map */
