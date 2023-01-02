@@ -1,7 +1,7 @@
 .btn-1 {
   @extend %font-family-alpha;
   @include font($size: 1.6rem, $height: 2rem);
-  padding: 14px 27px;
+  padding: 1.4rem 2.7rem;
   border-radius: 1rem;
   background-color: inherit;
   color: $color-dark;

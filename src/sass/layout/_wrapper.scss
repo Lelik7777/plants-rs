@@ -1,15 +1,7 @@
 .wrapper {
   max-width: $content-width;
   margin: auto;
-  background-color: $color-background;
-  padding: 0 $padding-side-desktop;
-  border: 1px solid black;
-
-  @include media-mobile {
-    padding: 0 $padding-side-mobile;
-  }
 }
 
-.wrapper_bg-none {
-  background-color: $color-light;
-}
+
+

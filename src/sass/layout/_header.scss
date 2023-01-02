@@ -1,13 +1,15 @@
 .header {
   @extend %font-family-beta;
   @include font($size: 1.6rem, $height: 5rem);
+  background-color: $color-background;
+  padding: 42px 111px 42px 108px;
 }
 
 .header__wrapper {
   @include flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 42px 111px 42px 108px;
+
 }
 
 .header__logo {

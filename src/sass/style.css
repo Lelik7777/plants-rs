@@ -321,7 +321,7 @@ ul {
 h1, h2, h3, p {
   margin: 0; }
 
-body, h1, h3, .btn-1 {
+body, h1, h3, .btn-1, .welcome__content {
   font-family: 'Inter', 'Verdana', sans-serif; }
 
 h2, .btn-2, .header {
@@ -377,7 +377,7 @@ p {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 2rem;
-  padding: 14px 27px;
+  padding: 1.4rem 2.7rem;
   border-radius: 1rem;
   background-color: inherit;
   color: #000; }
@@ -404,30 +404,22 @@ p {
 
 .wrapper {
   max-width: 1440px;
-  margin: auto;
-  background-color: #EDF2EC;
-  padding: 0 11rem;
-  border: 1px solid black; }
-  @media (max-width: 380px) {
-    .wrapper {
-      padding: 0 2.5rem; } }
-
-.wrapper_bg-none {
-  background-color: #fff; }
+  margin: auto; }
 
 .header {
   font-style: normal;
   font-weight: 400;
   font-size: 1.6rem;
-  line-height: 5rem; }
+  line-height: 5rem;
+  background-color: #EDF2EC;
+  padding: 42px 111px 42px 108px; }
 
 .header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  flex-wrap: wrap;
-  padding: 42px 111px 42px 108px; }
+  flex-wrap: wrap; }
 
 .header__logo {
   line-height: 2rem;
@@ -436,21 +428,6 @@ p {
 .logo-object {
   width: 2rem;
   height: 2rem; }
-
-.welcome__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap; }
-
-.welcome__content {
-  max-width: 54.9rem; }
-
-.welcome__image {
-  max-width: 44.88rem; }
-
-.image-welcome {
-  height: 100%; }
 
 .navigation {
   display: flex;
@@ -466,5 +443,38 @@ p {
     font-weight: 700; }
   .navigation__item:last-child .navigation__link {
     padding-right: 0; }
+
+.welcome {
+  padding: 6.2rem 10.9rem;
+  background-color: #EDF2EC; }
+
+.welcome__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%; }
+
+.image-welcome {
+  max-width: 44.88rem; }
+
+.welcome__content {
+  margin-left: 22.42rem; }
+
+.welcome__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 5rem;
+  margin-bottom: 42px; }
+
+.welcome__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.5rem;
+  margin-bottom: 48px; }
+
+.welcome__btn {
+  margin-bottom: 5px; }
 
 /*# sourceMappingURL=style.css.map */
