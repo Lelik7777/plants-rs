@@ -1,6 +1,28 @@
-.about{
+.about {
   padding: 9.3rem 10.9rem 9.4rem 10.9rem;
 }
-.about__wrapper{
-  
+
+.about__wrapper {
+  @include flex;
+  flex-wrap: wrap;
+}
+
+.about__content {
+  padding: 6.8rem 15.3rem 6.1rem 0;
+  max-width: 60.5rem;
+}
+
+.about__title {
+  font-weight: $regular;
+  color: $color-alpha;
+  margin-bottom: 4rem;
+}
+
+.title-about_emphasized {
+  color: $color-beta;
+}
+
+.about__img {
+  max-width: 46.4rem;
+  height: 100%;
 }

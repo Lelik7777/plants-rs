@@ -2,12 +2,18 @@ html {
   //10px===62,5%
   font-size: 62.5%;
   scroll-behavior: smooth;
+
 }
 
 body {
   @extend %font-family-alpha;
   @include font($size: 1.6rem, $weight: $regular, $height: 3rem);
   color: $color-dark;
+}
+
+//delete horizontal scroll line
+main{
+  overflow: hidden;
 }
 
 h1 {
@@ -18,7 +24,7 @@ h1 {
 
 h2 {
   @extend %font-family-beta;
-  @include font($size: 4rem, $weight: $bold, $height: 5rem);
+  @include font($size: 4rem, $weight: $bold, $height: 5.2rem);
 }
 
 h3 {
