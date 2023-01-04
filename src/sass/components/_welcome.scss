@@ -1,7 +1,7 @@
 .welcome {
   padding: 6.2rem 10.9rem;
   background-color: $color-background;
-
+  max-height: 53.2rem;
 }
 
 .welcome__wrapper {
@@ -11,12 +11,14 @@
 
 .image-welcome {
   max-width: 44.88rem;
+  max-height: 40.74rem;
 }
 
 .welcome__content {
   @extend %font-family-alpha;
   margin-left: 22.42rem;
   max-width: 549px;
+  max-height: 340px;
 }
 
 .welcome__title {
@@ -25,7 +27,7 @@
 
 .welcome__text {
   @include font($size: 2rem, $height: 3.5rem);
-  margin-bottom: 48px;
+  margin-bottom: 43px;
 }
 
 .welcome__btn {
