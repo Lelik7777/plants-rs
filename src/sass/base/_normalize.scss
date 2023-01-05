@@ -352,9 +352,9 @@ template {
 //custom adding
 
 // add html5 elements for IE
-section, article, footer, header {
-  display: block;
-}
+//section, article, footer, header {
+//  display: block;
+//}
 
 //width contains paddings and borders
 * {
@@ -374,4 +374,13 @@ ul {
 
 h1, h2, h3, p {
   margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  font-family: inherit;
 }

@@ -1,13 +1,16 @@
+
 .navigation {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
-
+  gap: 4.7rem;
 }
-.navigation__item{
+
+.navigation__item {
   color: #010201;
 }
+
 .navigation__link {
-  padding: 0 4.6rem 0 0;
   @extend %transition;
 
 
@@ -15,9 +18,8 @@
     @include active;
   }
 
-  .navigation__item:last-child & {
-    padding-right: 0;
-  }
+}
 
-
+.contacts {
+  padding-right: 0;
 }
