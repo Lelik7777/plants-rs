@@ -1,20 +1,30 @@
 .header {
   @extend %font-family-beta;
   @include font($size: 1.6rem, $height: 5rem);
-  padding: 4.2rem 11.1rem 4.2rem 10.8rem;
+  padding: 4.2rem 0;
   background-color: $color-background;
+
 }
 
 .header__wrapper {
   @include flex;
+  flex-wrap: wrap;
+}
 
+.header__logo {
+  padding-left: 10.9rem;
+}
+
+.header__navigation {
+  padding-right: 11.1rem;
 }
 
 .logo-text {
   @extend %font-family-beta;
   @include font($size: 1.6rem, $height: 2.1rem);
+
 }
 
 .logo-object {
-  max-width: 2rem;
+  max-width: 1.9rem;
 }

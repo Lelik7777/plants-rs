@@ -319,6 +319,14 @@ ul {
 h1, h2, h3, p {
   margin: 0; }
 
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  font-family: inherit; }
+
 body, h1, h3, .btn-1, .welcome__content {
   font-family: 'Inter', 'Verdana', sans-serif; }
 
@@ -408,13 +416,20 @@ h3 {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 5rem;
-  padding: 4.2rem 11.1rem 4.2rem 10.8rem;
+  padding: 4.2rem 0;
   background-color: #EDF2EC; }
 
 .header__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
+
+.header__logo {
+  padding-left: 10.9rem; }
+
+.header__navigation {
+  padding-right: 11.1rem; }
 
 .logo-text {
   font-style: normal;
@@ -423,7 +438,7 @@ h3 {
   line-height: 2.1rem; }
 
 .logo-object {
-  max-width: 2rem; }
+  max-width: 1.9rem; }
 
 .parent__circle {
   position: fixed;
@@ -437,18 +452,19 @@ h3 {
 
 .navigation {
   display: flex;
-  flex-wrap: wrap; }
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4.7rem; }
 
 .navigation__item {
   color: #010201; }
 
-.navigation__link {
-  padding: 0 4.6rem 0 0; }
-  .navigation__link:hover {
-    color: #E06733;
-    font-weight: 700; }
-  .navigation__item:last-child .navigation__link {
-    padding-right: 0; }
+.navigation__link:hover {
+  color: #E06733;
+  font-weight: 700; }
+
+.contacts {
+  padding-right: 0; }
 
 .welcome {
   background-color: #EDF2EC; }
@@ -461,12 +477,10 @@ h3 {
   padding: 6.2rem 10.9rem 6.24rem 10.9rem; }
 
 .image-welcome {
-  max-width: 448.8px;
-  max-height: 407.36px; }
+  max-width: 44.88rem; }
 
 .welcome__content {
-  max-width: 54.9rem;
-  padding-top: 8px; }
+  max-width: 54.9rem; }
 
 .welcome__title {
   margin-bottom: 4.2rem; }
@@ -476,10 +490,10 @@ h3 {
   font-weight: 400;
   font-size: 2rem;
   line-height: 3.5rem;
-  margin-bottom: 44px; }
+  margin-bottom: 4.8rem; }
 
 .about {
-  padding: 9.7rem 10.9rem 9.0rem 10.9rem; }
+  padding: 9.3rem 10.9rem 9.4rem 10.9rem; }
 
 .about__wrapper {
   display: flex;

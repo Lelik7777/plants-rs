@@ -375,3 +375,12 @@ ul {
 h1, h2, h3, p {
   margin: 0;
 }
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  font-family: inherit;
+}

@@ -9,14 +9,13 @@
 }
 
 .image-welcome {
-  max-width: 448.8px;
-  max-height: 407.36px;
+  max-width: 44.88rem;
 }
 
 .welcome__content {
   @extend %font-family-alpha;
   max-width: 54.9rem;
-  padding-top: 8px;
+
 }
 
 .welcome__title {
@@ -25,6 +24,6 @@
 
 .welcome__text {
   @include font($size: 2rem, $height: 3.5rem);
-  margin-bottom: 44px;
+  margin-bottom: 4.8rem;
 }
 
