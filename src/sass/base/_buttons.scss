@@ -1,10 +1,8 @@
 .btn-1 {
   @extend %font-family-alpha;
   @include font($size: 1.6rem, $height: 2rem);
+  @include button($color: $color-dark, $radius: 1rem);
   padding: 1.3rem 2.7rem;
-  border-radius: 1rem;
-  background-color: inherit;
-  color: $color-dark;
 
   &_bordered {
     border: 2px solid $color-beta;
@@ -18,12 +16,12 @@
 
 
 .btn-2 {
-  padding: 12px 40px;
-  background-color: inherit;
-  border-radius: 0.5rem;
   @include font($size: 2rem, $height: 2.6rem);
   @extend %font-family-beta;
-  color: $color-beta;
+  @include button();
+  padding: 1.2rem 0;
+  text-transform: capitalize;
+  min-width: 16.2rem;
 
   &_bordered {
     border: 1px solid $color-beta;

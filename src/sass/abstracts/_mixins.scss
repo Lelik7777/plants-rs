@@ -11,6 +11,14 @@
   align-items: center;
 }
 
+@mixin button($color:$color-beta,$radius:0.5rem,$bg:inherit,$cursor:pointer,$text-align:center) {
+  color: $color;
+  border-radius: $radius;
+  background-color: $bg;
+  cursor: $cursor;
+  text-align: $text-align;
+}
+
 @mixin active {
   color: $color-beta;
   font-weight: $bold;
