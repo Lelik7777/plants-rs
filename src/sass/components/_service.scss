@@ -1,0 +1,17 @@
+.service__content {
+  @include flex;
+  padding: 4rem 32.4rem 9rem 10.9rem;
+}
+
+.service__title {
+  font-weight: $regular;
+  color: $color-alpha;
+  max-width: 30.6rem;
+}
+.service__btns{
+
+}
+.service__btn{
+margin-left: 3.8rem;
+}
+

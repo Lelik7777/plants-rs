@@ -382,10 +382,12 @@ h3 {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 2rem;
-  padding: 1.3rem 2.7rem;
+  color: #000;
   border-radius: 1rem;
   background-color: inherit;
-  color: #000; }
+  cursor: pointer;
+  text-align: center;
+  padding: 1.3rem 2.7rem; }
   .btn-1_bordered {
     border: 2px solid #E06733; }
   .btn-1_colored {
@@ -393,14 +395,18 @@ h3 {
     border: 2px solid #E06733; }
 
 .btn-2 {
-  padding: 12px 40px;
-  background-color: inherit;
-  border-radius: 0.5rem;
   font-style: normal;
   font-weight: 400;
   font-size: 2rem;
   line-height: 2.6rem;
-  color: #E06733; }
+  color: #E06733;
+  border-radius: 0.5rem;
+  background-color: inherit;
+  cursor: pointer;
+  text-align: center;
+  padding: 1.2rem 0;
+  text-transform: capitalize;
+  min-width: 16.2rem; }
   .btn-2_bordered {
     border: 1px solid #E06733; }
   .btn-2_colored {
@@ -463,9 +469,6 @@ h3 {
   color: #E06733;
   font-weight: 700; }
 
-.contacts {
-  padding-right: 0; }
-
 .welcome {
   background-color: #EDF2EC; }
 
@@ -520,5 +523,19 @@ h3 {
 
 .about__img {
   max-width: 46.4rem; }
+
+.service__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 32.4rem 9rem 10.9rem; }
+
+.service__title {
+  font-weight: 400;
+  color: #499A18;
+  max-width: 30.6rem; }
+
+.service__btn {
+  margin-left: 3.8rem; }
 
 /*# sourceMappingURL=style.css.map */

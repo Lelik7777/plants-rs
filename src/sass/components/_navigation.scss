@@ -7,7 +7,7 @@
 }
 
 .navigation__item {
-  color: #010201;
+  color: $color-heading;
 }
 
 .navigation__link {
@@ -18,8 +18,4 @@
     @include active;
   }
 
-}
-
-.contacts {
-  padding-right: 0;
 }
