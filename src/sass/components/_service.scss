@@ -1,48 +1,48 @@
 .service {
-  padding: 40px 109px 71px 109px;
+  padding: 4.0rem 10.9rem 7.1rem 10.9rem;
   background-color: $color-background;
 }
 //block service content
-//custom margin-bottom(must be 90px)
+//custom margin-bottom(must be 9.0rem)
 .service__content {
-  max-width: 1007px;
+  max-width: 100.7rem;
   @include flex;
   flex-wrap: wrap;
-  padding-bottom: 75px;
+  padding-bottom: 7.5rem;
 }
 
 .service__title-2 {
   font-weight: $regular;
   color: $color-alpha;
-  max-width: 306px;
+  max-width: 30.6rem;
 }
 
 .service__btns {
   display: flex;
   gap: 3.5rem;
-  max-width: 559px;
+  max-width: 55.9rem;
 }
 
 // block service container
 .service__column{
-  margin-bottom: 50px;
+  margin-bottom: 5.0rem;
 }
 .service__item {
-  max-width: 330px;
+  max-width: 33.0rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   border: 1px solid #E3E1D5;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 2.0rem 2.0rem 2.0rem 2.0rem;
 
 }
 .service__img {
-  margin-bottom: 10px;
+  margin-bottom: 1.0rem;
 }
 .service__title-3{
-  margin-bottom: 10px;
+  margin-bottom: 1.0rem;
 }
 .service__text{
-  margin-bottom: 33px;
+  margin-bottom: 3.3rem;
 }
