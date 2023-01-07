@@ -11,6 +11,13 @@
   align-items: center;
 }
 
+@mixin column($width) {
+  @include flex;
+  > * {
+    flex-basis: $width;
+  }
+}
+
 @mixin button($color:$color-beta,$radius:0.5rem,$bg:inherit,$cursor:pointer,$text-align:center) {
   color: $color;
   border-radius: $radius;
@@ -18,6 +25,7 @@
   cursor: $cursor;
   text-align: $text-align;
 }
+
 
 @mixin active {
   color: $color-beta;

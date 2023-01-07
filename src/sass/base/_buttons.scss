@@ -19,9 +19,9 @@
   @include font($size: 2rem, $height: 2.6rem);
   @extend %font-family-beta;
   @include button();
-  padding: 1.2rem 0;
+  padding: 1.1rem 0;
   text-transform: capitalize;
-  min-width: 16.2rem;
+  min-width: 16.1rem;
 
   &_bordered {
     border: 1px solid $color-beta;
