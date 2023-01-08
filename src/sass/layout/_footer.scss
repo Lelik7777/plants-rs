@@ -12,10 +12,12 @@
 }
 
 .github:hover {
+  @extend %transition;
   opacity: 0.5;
 }
 
 .footer__ref:hover {
+  @extend %transition;
   opacity: 0.5;
 }
 

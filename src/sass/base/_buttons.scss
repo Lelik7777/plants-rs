@@ -17,6 +17,7 @@
     background-color: $color-beta;
     border: 0.2rem solid $color-beta;
     color: $color-light;
+    @extend %transition;
   }
 }
 
@@ -42,6 +43,7 @@
     background-color: $color-beta;
     border: 0.1rem solid $color-beta;
     color: $color-light;
+    @extend %transition;
   }
 }
 

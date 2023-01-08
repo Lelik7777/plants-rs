@@ -333,7 +333,7 @@ body, h1, h3, .btn-1, .welcome__content, .prices__title, .btn-contact-us__title 
 h2, .btn-2, .header, .logo-text {
   font-family: 'Inika', 'Verdana', sans-serif; }
 
-.navigation__link {
+.btn-1:hover, .btn-2:hover, .github:hover, .footer__ref:hover, .navigation__link {
   transition: all .5s ease-out; }
 
 html {
