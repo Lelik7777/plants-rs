@@ -12,6 +12,12 @@
     background-color: $color-beta;
     border: 0.2rem solid $color-beta;
   }
+
+  &:hover {
+    background-color: $color-beta;
+    border: 0.2rem solid $color-beta;
+    color: $color-light;
+  }
 }
 
 
@@ -31,15 +37,21 @@
     background-color: $color-beta;
     border: 0.1rem solid $color-beta;
   }
+
+  &:hover {
+    background-color: $color-beta;
+    border: 0.1rem solid $color-beta;
+    color: $color-light;
+  }
 }
 
 .prices__btn {
   padding: 1.6rem 4rem;
   @include flex2;
-  @include button($color:$color-dark,$radius:2rem,$bg:$color-background,$text-align:none);
+  @include button($color: $color-dark, $radius: 2rem, $bg: $color-background, $text-align: none);
   flex-grow: 1;
   border: none;
-  @include font($size:2rem,$height:2rem,$weight:$bold);
+  @include font($size: 2rem, $height: 2rem, $weight: $bold);
 }
 
 .btn-contact-us {

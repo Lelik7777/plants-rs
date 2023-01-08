@@ -393,6 +393,10 @@ h3 {
   .btn-1_colored {
     background-color: #E06733;
     border: 0.2rem solid #E06733; }
+  .btn-1:hover {
+    background-color: #E06733;
+    border: 0.2rem solid #E06733;
+    color: #fff; }
 
 .btn-2 {
   font-style: normal;
@@ -412,6 +416,10 @@ h3 {
   .btn-2_colored {
     background-color: #E06733;
     border: 0.1rem solid #E06733; }
+  .btn-2:hover {
+    background-color: #E06733;
+    border: 0.1rem solid #E06733;
+    color: #fff; }
 
 .prices__btn {
   padding: 1.6rem 4rem;
@@ -503,6 +511,12 @@ h3 {
 
 .copyright_item {
   margin-right: 1.5rem; }
+
+.github:hover {
+  opacity: 0.5; }
+
+.footer__ref:hover {
+  opacity: 0.5; }
 
 .footer__center {
   text-align: center; }
