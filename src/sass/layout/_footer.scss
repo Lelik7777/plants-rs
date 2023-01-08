@@ -1,0 +1,32 @@
+.footer {
+  padding: 3.4rem 10.9rem;
+  @include font($size: 2rem, $height: 5rem);
+}
+
+.footer__wrapper {
+  flex-wrap: wrap;
+}
+
+.copyright_item {
+  margin-right: 1.5rem;
+}
+
+.footer__center {
+  text-align: center;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2.0rem;
+}
+
+.footer__item {
+  display: flex;
+}
+
+.footer__link {
+  display: flex;
+  flex-grow: 1;
+
+}
