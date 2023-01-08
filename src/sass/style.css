@@ -417,8 +417,17 @@ h3 {
   padding: 1.6rem 4rem;
   display: flex;
   justify-content: space-between;
-  border-radius: 20px;
-  max-width: 250px; }
+  color: #000;
+  border-radius: 2rem;
+  background-color: #EDF2EC;
+  cursor: pointer;
+  text-align: none;
+  flex-grow: 1;
+  border: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem; }
 
 .btn-contact-us {
   display: flex;
@@ -429,7 +438,8 @@ h3 {
   padding: 0.8rem 3.5rem 0.4rem 2.6rem;
   border: none;
   background: #D6E7D2;
-  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25); }
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  cursor: pointer; }
 
 .wrapper {
   max-width: 1440px;
@@ -482,7 +492,7 @@ h3 {
     flex-basis: 30%; }
 
 .footer {
-  padding: 3.4rem 10.9rem;
+  padding: 3.7rem 10.9rem;
   font-style: normal;
   font-weight: 400;
   font-size: 2rem;
@@ -597,7 +607,8 @@ h3 {
 .service__btns {
   display: flex;
   gap: 3.5rem;
-  max-width: 55.9rem; }
+  max-width: 56.1rem;
+  width: 100%; }
 
 .service__column {
   margin-bottom: 5.0rem; }
@@ -621,7 +632,7 @@ h3 {
   margin-bottom: 3.3rem; }
 
 .prices {
-  padding: 35px 109px 115px 109px; }
+  padding: 3.5rem 10.9rem 12.1rem 10.9rem; }
 
 .prices__wrapper {
   display: flex;
@@ -632,12 +643,31 @@ h3 {
 
 .prices__content-left {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  max-width: 33.2rem;
+  width: 100%; }
   .prices__content-left h2 {
-    margin-bottom: 60px; }
+    margin-bottom: 6.0rem; }
 
 .prices__title {
-  line-height: 48px; }
+  line-height: 4.8rem; }
+
+.prices__items {
+  display: flex;
+  flex-direction: column;
+  padding: 3.4rem 4.1rem;
+  border: 1px solid #E3E1D5;
+  border-radius: 2.0rem; }
+
+.prices__item {
+  width: auto;
+  display: flex;
+  margin-bottom: 30px; }
+  .prices__item:last-child {
+    margin-bottom: 0; }
+
+.accord-object {
+  margin-left: 54px; }
 
 .prices__content-right {
   max-width: 452px;
@@ -648,21 +678,10 @@ h3 {
     font-weight: 700;
     text-transform: none;
     margin-top: 42px;
-    margin-bottom: 35px; }
+    margin-bottom: 42px; }
 
-.prices__items {
-  padding: 34px 41px;
-  border: 1px solid #E3E1D5;
-  border-radius: 20px;
-  max-width: 332px;
-  max-width: 33.2rem;
-  border-radius: 20px; }
-
-.prices__item {
-  max-width: 250px; }
-
-.accord-object {
-  margin-left: 54px; }
+.prices__img {
+  max-width: 152px; }
 
 .contact-us {
   background-color: #EDF2EC;
