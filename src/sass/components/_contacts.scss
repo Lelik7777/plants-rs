@@ -1,0 +1,36 @@
+.contact-us {
+  background-color: $color-background;
+  padding: 5.3rem 10.9rem 0 10.9rem;
+}
+
+.contact-us__wrapper {
+  display: flex;
+}
+
+.contact-us__img {
+  max-width: 40.0rem;
+  margin-right: 11.3rem;
+}
+
+.contact-us__content {
+  max-width: 45.0rem+6.4rem+19.5rem;
+  display: flex;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+
+.contact-us__title {
+  color: #499A18;
+  margin-right: 6.4rem;
+}
+
+.contact-us__btn {
+  display: flex;
+  flex-grow: 1;
+  margin-top: 8.8rem;
+}
+
+.btn-contact-us__title {
+  @extend %font-family-alpha;
+  @include font($size: 2rem, $height: 4rem)
+}
