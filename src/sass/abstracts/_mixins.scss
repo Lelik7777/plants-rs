@@ -5,10 +5,14 @@
   line-height: $height;
 }
 
-@mixin flex {
+@mixin flex{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@mixin flex2{
+  display: flex;
+  justify-content: space-between;
 }
 
 @mixin column($width) {
