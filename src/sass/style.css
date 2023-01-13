@@ -333,7 +333,7 @@ body, h1, h3, .btn-1, .welcome__content, .prices__title, .btn-contact-us__title 
 h2, .btn-2, .header, .logo-text {
   font-family: 'Inika', 'Verdana', sans-serif; }
 
-.btn-1:hover, .btn-2:hover, .github:hover, .footer__ref:hover, .navigation__link {
+.btn-1:hover, .btn-2:hover, .github:hover, .footer__ref:hover, .navigation__link, .accord-object {
   transition: all .5s ease-out; }
 
 html {
@@ -683,6 +683,11 @@ h3 {
 
 .accord-object {
   margin-left: 54px; }
+  .accord-object:hover {
+    transform: rotate(180deg); }
+
+.accord-object__circle:hover {
+  cursor: pointer; }
 
 .prices__content-right {
   max-width: 452px;
