@@ -6,24 +6,42 @@
   @include flex;
   flex-wrap: wrap;
   padding: 6.2rem 10.9rem 6.24rem 10.9rem;
+  @include media-tablet {
+    padding: 4rem 5rem 7rem;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
 }
 
 .image-welcome {
   max-width: 44.88rem;
+  @include media-tablet {
+    max-width: 28rem;
+  }
 }
 
 .welcome__content {
   @extend %font-family-alpha;
   max-width: 54.9rem;
-
+  @include media-tablet {
+    max-width: 34.6rem;
+  }
 }
 
 .welcome__title {
   margin-bottom: 4.2rem;
+  @include media-tablet{
+    margin-bottom: 3rem;
+    font-size: 3.5rem;
+  }
 }
 
 .welcome__text {
   @include font($size: 2rem, $height: 3.5rem);
   margin-bottom: 4.8rem;
+  @include media-tablet{
+    margin-bottom: 3rem;
+    @include font($size: 1.6rem, $height: 2.5rem);
+  }
 }
 
