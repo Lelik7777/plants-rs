@@ -460,6 +460,9 @@ h3 {
   line-height: 5rem;
   padding: 4.2rem 0;
   background-color: #EDF2EC; }
+  @media (max-width: 768px) {
+    .header {
+      padding: 3.5rem 0; } }
 
 .header__wrapper {
   display: flex;
@@ -469,9 +472,15 @@ h3 {
 
 .header__logo {
   padding-left: 10.9rem; }
+  @media (max-width: 768px) {
+    .header__logo {
+      padding-left: 5rem; } }
 
 .header__navigation {
   padding-right: 11.1rem; }
+  @media (max-width: 768px) {
+    .header__navigation {
+      padding-right: 5rem; } }
 
 .logo-text {
   font-style: normal;
