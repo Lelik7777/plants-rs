@@ -605,21 +605,43 @@ h3 {
 
 .about {
   padding: 9.3rem 10.9rem 9.4rem 10.9rem; }
+  @media (max-width: 768px) {
+    .about {
+      padding: 4rem 5rem 9.5rem; } }
 
 .about__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap; }
+  @media (max-width: 768px) {
+    .about__wrapper {
+      flex-direction: column;
+      gap: 6.5rem; } }
 
 .about__content {
   max-width: 60.5rem; }
+  @media (max-width: 768px) {
+    .about__content {
+      max-width: 66.8rem;
+      display: flex;
+      flex-direction: column; } }
 
 .about__title {
   font-weight: 400;
   color: #499A18;
   margin-bottom: 4.0rem;
   max-width: 46.3rem; }
+  @media (max-width: 768px) {
+    .about__title {
+      max-width: 42.3rem;
+      align-self: center;
+      text-align: center;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3.5rem;
+      line-height: 4.561rem;
+      margin-bottom: 5rem; } }
 
 .title-about_emphasized {
   color: #E06733; }
@@ -632,6 +654,9 @@ h3 {
 
 .about__img {
   max-width: 46.4rem; }
+  @media (max-width: 768px) {
+    .about__img {
+      max-width: 25rem; } }
 
 .service {
   padding: 4.0rem 10.9rem 7.1rem 10.9rem;

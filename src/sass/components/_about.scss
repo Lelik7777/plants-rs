@@ -1,14 +1,26 @@
 .about {
   padding: 9.3rem 10.9rem 9.4rem 10.9rem;
+  @include media-tablet {
+    padding: 4rem 5rem 9.5rem;
+  }
 }
 
 .about__wrapper {
   @include flex;
   flex-wrap: wrap;
+  @include media-tablet {
+    flex-direction: column;
+    gap: 6.5rem;
+  }
 }
 
 .about__content {
   max-width: 60.5rem;
+  @include media-tablet {
+    max-width: 66.8rem;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .about__title {
@@ -16,6 +28,13 @@
   color: $color-alpha;
   margin-bottom: 4.0rem;
   max-width: 46.3rem;
+  @include media-tablet {
+    max-width: 42.3rem;
+    align-self: center;
+    text-align: center;
+    @include font($size: 3.5rem, $height: 4.561rem, $weight: $regular);
+    margin-bottom: 5rem;
+  }
 }
 
 .title-about_emphasized {
@@ -28,4 +47,7 @@
 
 .about__img {
   max-width: 46.4rem;
+  @include media-tablet {
+    max-width: 25rem;
+  }
 }
