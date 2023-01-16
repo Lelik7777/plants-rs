@@ -515,9 +515,15 @@ h3 {
   font-weight: 400;
   font-size: 2rem;
   line-height: 5rem; }
+  @media (max-width: 768px) {
+    .footer {
+      padding: 21px 0 28px; } }
 
 .footer__wrapper {
   flex-wrap: wrap; }
+  @media (max-width: 768px) {
+    .footer__wrapper {
+      flex-direction: column; } }
 
 .copyright_item {
   margin-right: 1.5rem; }
@@ -664,7 +670,7 @@ h3 {
   background-color: #EDF2EC; }
   @media (max-width: 768px) {
     .service {
-      padding: 6rem 5rem 7rem; } }
+      padding: 6rem 5rem 3rem; } }
 
 .service__content {
   max-width: 100.7rem;
@@ -675,7 +681,7 @@ h3 {
   padding-bottom: 7.5rem; }
   @media (max-width: 768px) {
     .service__content {
-      padding-bottom: 0; } }
+      padding-bottom: 40px; } }
 
 .service__title-2 {
   font-weight: 400;
@@ -695,6 +701,14 @@ h3 {
   max-width: 56.1rem;
   width: 100%; }
 
+@media (max-width: 768px) {
+  .service__column {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .service__column > * {
+      flex-basis: 45%; } }
+
 .service__item {
   max-width: 33.0rem;
   display: flex;
@@ -704,21 +718,37 @@ h3 {
   border: 1px solid #E3E1D5;
   border-radius: 2.0rem 2.0rem 2.0rem 2.0rem;
   margin-bottom: 5rem; }
+  @media (max-width: 768px) {
+    .service__item {
+      max-width: 28rem;
+      margin-bottom: 3.8rem; } }
 
 .service__img {
+  width: 100%;
   margin-bottom: 1.0rem; }
   @media (max-width: 768px) {
     .service__img {
-      max-width: 28rem; } }
+      min-height: 350px; } }
 
 .service__title-3 {
   margin-bottom: 1.0rem; }
 
 .service__text {
   margin-bottom: 3.3rem; }
+  @media (max-width: 768px) {
+    .service__text {
+      padding: 0 4rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      line-height: 2rem;
+      max-width: 20.1rem;
+      width: 100%; } }
 
 .prices {
   padding: 3.5rem 10.9rem 12.1rem 10.9rem; }
+  @media (max-width: 768px) {
+    .prices {
+      padding: 4rem 5rem 8.8rem; } }
 
 .prices__wrapper {
   display: flex;
@@ -734,6 +764,14 @@ h3 {
   width: 100%; }
   .prices__content-left h2 {
     margin-bottom: 6.0rem; }
+    @media (max-width: 768px) {
+      .prices__content-left h2 {
+        margin-bottom: 5.0rem;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.5rem;
+        line-height: 4.23rem;
+        padding-left: 1.5rem; } }
 
 .prices__title {
   line-height: 4.8rem; }
@@ -765,11 +803,22 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: flex-end; }
+  @media (max-width: 768px) {
+    .prices__content-right {
+      padding-top: 10rem; } }
   .prices__content-right button {
     font-weight: 700;
     text-transform: none;
     margin-top: 42px;
     margin-bottom: 42px; }
+    @media (max-width: 768px) {
+      .prices__content-right button {
+        margin: 3rem 0; } }
+  .prices__content-right h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.5rem; }
 
 .prices__img {
   max-width: 152px; }
@@ -777,28 +826,53 @@ h3 {
 .contact-us {
   background-color: #EDF2EC;
   padding: 5.3rem 10.9rem 0 10.9rem; }
+  @media (max-width: 768px) {
+    .contact-us {
+      padding: 4rem 159px 0; } }
 
 .contact-us__wrapper {
   display: flex; }
+  @media (max-width: 768px) {
+    .contact-us__wrapper {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center; } }
 
 .contact-us__img {
   max-width: 40.0rem;
   margin-right: 11.3rem; }
+  @media (max-width: 768px) {
+    .contact-us__img {
+      max-width: 20rem;
+      margin: 0;
+      padding-left: 17px; } }
 
 .contact-us__content {
   max-width: 70.9rem;
   display: flex;
   align-items: flex-start;
   flex-grow: 1; }
+  @media (max-width: 768px) {
+    .contact-us__content {
+      flex-direction: column;
+      align-items: center;
+      width: 100%; } }
 
 .contact-us__title {
   color: #499A18;
   margin-right: 6.4rem; }
+  @media (max-width: 768px) {
+    .contact-us__title {
+      margin: 0; } }
 
 .contact-us__btn {
   display: flex;
   flex-grow: 1;
   margin-top: 8.8rem; }
+  @media (max-width: 768px) {
+    .contact-us__btn {
+      width: 100%;
+      margin: 10rem 0 25rem; } }
 
 .btn-contact-us__title {
   font-style: normal;
