@@ -2,7 +2,7 @@
   padding: 4.0rem 10.9rem 7.1rem 10.9rem;
   background-color: $color-background;
   @include media-tablet {
-    padding: 6rem 5rem 7rem;
+    padding: 6rem 5rem 3rem;
   }
 }
 
@@ -14,7 +14,7 @@
   flex-wrap: wrap;
   padding-bottom: 7.5rem;
   @include media-tablet {
-    padding-bottom: 0;
+    padding-bottom: 40px;
   }
 }
 
@@ -36,6 +36,11 @@
 }
 
 // block service container
+.service__column {
+  @include media-tablet {
+    @include column(45%);
+  }
+}
 
 .service__item {
   max-width: 33.0rem;
@@ -46,12 +51,17 @@
   border: 1px solid #E3E1D5;
   border-radius: 2.0rem 2.0rem 2.0rem 2.0rem;
   margin-bottom: 5rem;
+  @include media-tablet {
+    max-width: 28rem;
+    margin-bottom: 3.8rem;
+  }
 }
 
 .service__img {
+  width: 100%;
   margin-bottom: 1.0rem;
   @include media-tablet {
-    max-width: 28rem;
+    min-height: 350px;
   }
 }
 
@@ -61,4 +71,12 @@
 
 .service__text {
   margin-bottom: 3.3rem;
+  @include media-tablet {
+    padding: 0 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 2rem;
+    max-width: 20.1rem;
+    width: 100%;
+  }
 }
