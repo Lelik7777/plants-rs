@@ -1,5 +1,8 @@
 .prices {
   padding: 3.5rem 10.9rem 12.1rem 10.9rem;
+  @include media-tablet {
+    padding: 4rem 5rem 8.8rem;
+  }
 }
 
 .prices__wrapper {
@@ -16,12 +19,20 @@
 
   & h2 {
     margin-bottom: 6.0rem;
+    @include media-tablet {
+      margin-bottom: 5.0rem;
+      @include font($size:3.5rem,$height:4.23rem,$weight:$bold);
+      padding-left: 1.5rem;
+    }
   }
 }
 
 .prices__title {
   @extend %font-family-alpha;
   line-height: 4.8rem;
+  @include media-tablet {
+
+  }
 }
 
 .prices__items {
@@ -61,12 +72,22 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  @include media-tablet {
+    padding-top: 10rem;
+  }
 
   & button {
     font-weight: 700;
     text-transform: none;
     margin-top: 42px;
     margin-bottom: 42px;
+    @include media-tablet {
+      margin: 3rem 0;
+    }
+  }
+  h2{
+    @include font($size:2.5rem,$height:3.5rem,$weight:$bold);
+
   }
 }
 
