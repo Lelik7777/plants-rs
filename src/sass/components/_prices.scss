@@ -46,8 +46,14 @@
 
 .accord-object {
   margin-left: 54px;
+  @extend %transition;
+  &:hover{
+    transform: rotate(180deg);
+  }
 }
-
+.accord-object__circle:hover{
+  cursor: pointer;
+}
 
 //right side prices
 .prices__content-right {

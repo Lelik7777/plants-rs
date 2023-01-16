@@ -1,9 +1,12 @@
+$pad-tablet: 5rem;
 .header {
   @extend %font-family-beta;
   @include font($size: 1.6rem, $height: 5rem);
   padding: 4.2rem 0;
   background-color: $color-background;
-
+  @include media-tablet {
+    padding: 3.5rem 0;
+  }
 }
 
 .header__wrapper {
@@ -13,10 +16,16 @@
 
 .header__logo {
   padding-left: 10.9rem;
+  @include media-tablet {
+    padding-left: $pad-tablet;
+  }
 }
 
 .header__navigation {
   padding-right: 11.1rem;
+  @include media-tablet {
+    padding-right: $pad-tablet;
+  }
 }
 
 .logo-text {
