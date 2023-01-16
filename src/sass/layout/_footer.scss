@@ -1,10 +1,16 @@
 .footer {
   padding: 3.7rem 10.9rem;
   @include font($size: 2rem, $height: 5rem);
+  @include media-tablet {
+    padding: 21px 0 28px;
+  }
 }
 
 .footer__wrapper {
   flex-wrap: wrap;
+  @include media-tablet {
+    flex-direction: column;
+  }
 }
 
 .copyright_item {

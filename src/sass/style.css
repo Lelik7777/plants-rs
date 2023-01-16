@@ -515,9 +515,15 @@ h3 {
   font-weight: 400;
   font-size: 2rem;
   line-height: 5rem; }
+  @media (max-width: 768px) {
+    .footer {
+      padding: 21px 0 28px; } }
 
 .footer__wrapper {
   flex-wrap: wrap; }
+  @media (max-width: 768px) {
+    .footer__wrapper {
+      flex-direction: column; } }
 
 .copyright_item {
   margin-right: 1.5rem; }
