@@ -820,28 +820,53 @@ h3 {
 .contact-us {
   background-color: #EDF2EC;
   padding: 5.3rem 10.9rem 0 10.9rem; }
+  @media (max-width: 768px) {
+    .contact-us {
+      padding: 4rem 159px 0; } }
 
 .contact-us__wrapper {
   display: flex; }
+  @media (max-width: 768px) {
+    .contact-us__wrapper {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center; } }
 
 .contact-us__img {
   max-width: 40.0rem;
   margin-right: 11.3rem; }
+  @media (max-width: 768px) {
+    .contact-us__img {
+      max-width: 20rem;
+      margin: 0;
+      padding-left: 17px; } }
 
 .contact-us__content {
   max-width: 70.9rem;
   display: flex;
   align-items: flex-start;
   flex-grow: 1; }
+  @media (max-width: 768px) {
+    .contact-us__content {
+      flex-direction: column;
+      align-items: center;
+      width: 100%; } }
 
 .contact-us__title {
   color: #499A18;
   margin-right: 6.4rem; }
+  @media (max-width: 768px) {
+    .contact-us__title {
+      margin: 0; } }
 
 .contact-us__btn {
   display: flex;
   flex-grow: 1;
   margin-top: 8.8rem; }
+  @media (max-width: 768px) {
+    .contact-us__btn {
+      width: 100%;
+      margin: 10rem 0 25rem; } }
 
 .btn-contact-us__title {
   font-style: normal;
