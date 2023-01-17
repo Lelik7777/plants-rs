@@ -679,6 +679,9 @@ h3 {
   @media (max-width: 768px) {
     .about {
       padding: 4rem 5rem 9.5rem; } }
+  @media (max-width: 380px) {
+    .about {
+      padding: 3rem 2.5rem 3.1rem; } }
 
 .about__wrapper {
   display: flex;
@@ -689,6 +692,9 @@ h3 {
     .about__wrapper {
       flex-direction: column;
       gap: 6.5rem; } }
+  @media (max-width: 380px) {
+    .about__wrapper {
+      gap: 0; } }
 
 .about__content {
   max-width: 60.5rem; }
@@ -713,6 +719,13 @@ h3 {
       font-size: 3.5rem;
       line-height: 4.561rem;
       margin-bottom: 5rem; } }
+  @media (max-width: 380px) {
+    .about__title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 2.5rem;
+      line-height: 3.3rem;
+      margin-bottom: 10px; } }
 
 .title-about_emphasized {
   color: #E06733; }
@@ -722,12 +735,21 @@ h3 {
   font-weight: 400;
   font-size: 2rem;
   line-height: 3rem; }
+  @media (max-width: 380px) {
+    .about__text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 2.5rem; } }
 
 .about__img {
   max-width: 46.4rem; }
   @media (max-width: 768px) {
     .about__img {
       max-width: 25rem; } }
+  @media (max-width: 380px) {
+    .about__img {
+      max-width: 15rem; } }
 
 .service {
   padding: 4.0rem 10.9rem 7.1rem 10.9rem;
