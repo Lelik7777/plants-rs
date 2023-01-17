@@ -11,6 +11,13 @@
   @include media-tablet {
     flex-direction: column;
   }
+
+}
+
+.footer__copyright {
+  @include media-tablet {
+    padding-left: 1rem;
+  }
 }
 
 .copyright_item {
@@ -22,9 +29,15 @@
   opacity: 0.5;
 }
 
-.footer__ref:hover {
-  @extend %transition;
-  opacity: 0.5;
+.footer__ref {
+  &:hover {
+    @extend %transition;
+    opacity: 0.5;
+  }
+  @include media-tablet {
+    position: relative;
+    bottom: 1rem;
+  }
 }
 
 .footer__center {
