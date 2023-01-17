@@ -3,6 +3,10 @@
   @include font($size: 1.6rem, $height: 2rem);
   @include button($color: $color-dark, $radius: 1rem);
   padding: 1.3rem 2.7rem;
+  @include media-mobile {
+    padding: 0.8rem 1.8rem;
+    @include font($size: 1rem, $height: 2rem);
+  }
 
   &_bordered {
     border: 0.2rem solid $color-beta;
