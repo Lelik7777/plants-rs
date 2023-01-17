@@ -5,7 +5,7 @@
 .welcome__wrapper {
   @include flex;
   flex-wrap: wrap;
-  padding: 6.2rem 10.9rem 6.24rem 10.9rem;
+  padding: 6.2rem 10.9rem 5rem 10.9rem;
   @include media-tablet {
     padding: 4rem 5rem 7rem;
     flex-direction: row-reverse;
@@ -13,12 +13,12 @@
   }
 }
 
-.image-welcome {
-  max-width: 44.88rem;
-  @include media-tablet {
-    max-width: 28rem;
-  }
-}
+//.image-welcome {
+//  max-width: 44.88rem;
+//  @include media-tablet {
+//    max-width: 28rem;
+//  }
+//}
 
 .welcome__content {
   @extend %font-family-alpha;
@@ -38,10 +38,11 @@
 
 .welcome__text {
   @include font($size: 2rem, $height: 3.5rem);
-  margin-bottom: 4.8rem;
+  margin-bottom: 4.5rem;
   @include media-tablet {
     margin-bottom: 3rem;
     @include font($size: 1.6rem, $height: 2.5rem);
+    padding-left: 5px;
   }
 }
 
