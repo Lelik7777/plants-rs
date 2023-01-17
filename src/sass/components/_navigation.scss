@@ -4,6 +4,9 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 4.7rem;
+  @include media-mobile {
+    display: none;
+  }
 }
 
 .navigation__item {

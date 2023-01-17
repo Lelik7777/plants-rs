@@ -7,6 +7,9 @@ $pad-tablet: 5rem;
   @include media-tablet {
     padding: 3.5rem 0;
   }
+  @include media-mobile {
+    padding: 2.5rem;
+  }
 }
 
 .header__wrapper {
@@ -18,6 +21,9 @@ $pad-tablet: 5rem;
   padding-left: 10.9rem;
   @include media-tablet {
     padding-left: $pad-tablet;
+  }
+  @include media-mobile {
+    padding: 0;
   }
 }
 

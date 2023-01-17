@@ -13,13 +13,6 @@
   }
 }
 
-//.image-welcome {
-//  max-width: 44.88rem;
-//  @include media-tablet {
-//    max-width: 28rem;
-//  }
-//}
-
 .welcome__content {
   @extend %font-family-alpha;
   max-width: 54.9rem;
