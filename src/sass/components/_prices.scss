@@ -30,9 +30,7 @@
 .prices__title {
   @extend %font-family-alpha;
   line-height: 4.8rem;
-  @include media-tablet {
 
-  }
 }
 
 .prices__items {

@@ -29,20 +29,22 @@
   opacity: 0.5;
 }
 
+.footer__center {
+  text-align: center;
+}
+
 .footer__ref {
-  &:hover {
-    @extend %transition;
-    opacity: 0.5;
-  }
   @include media-tablet {
     position: relative;
     bottom: 1rem;
   }
+
+  &:hover {
+    @extend %transition;
+    opacity: 0.5;
+  }
 }
 
-.footer__center {
-  text-align: center;
-}
 
 .footer__list {
   display: flex;
