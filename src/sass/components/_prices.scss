@@ -21,7 +21,7 @@
     margin-bottom: 6.0rem;
     @include media-tablet {
       margin-bottom: 5.0rem;
-      @include font($size:3.5rem,$height:4.23rem,$weight:$bold);
+      @include font($size: 3.5rem, $height: 4.23rem, $weight: $bold);
       padding-left: 1.5rem;
     }
   }
@@ -56,11 +56,13 @@
 .accord-object {
   margin-left: 54px;
   @extend %transition;
-  &:hover{
+
+  &:hover {
     transform: rotate(180deg);
   }
 }
-.accord-object__circle:hover{
+
+.accord-object__circle:hover {
   cursor: pointer;
 }
 
@@ -83,8 +85,12 @@
       margin: 3rem 0;
     }
   }
-  h2{
-    @include font($size:2.5rem,$height:3.5rem,$weight:$bold);
+
+  h2 {
+    @include media-tablet {
+      @include font($size: 2.5rem, $height: 3.5rem, $weight: $bold);
+    }
+
 
   }
 }

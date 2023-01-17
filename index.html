@@ -49,7 +49,10 @@
 <main>
     <section class="welcome">
         <div class="wrapper welcome__wrapper">
-            <img class="image-welcome" src="./src/img/welcome/leafs.png" alt="leaf">
+            <picture>
+                <source media="(max-width:768px)" srcset="src/img/welcome/welcome-leafs-tablet.png">
+                <img class="image-welcome" src="./src/img/welcome/leafs.png" alt="leaf">
+            </picture>
             <div class="welcome__content">
                 <h1 class="welcome__title">
                     We grow
