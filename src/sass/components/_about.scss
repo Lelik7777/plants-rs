@@ -3,6 +3,9 @@
   @include media-tablet {
     padding: 4rem 5rem 9.5rem;
   }
+  @include media-mobile {
+    padding: 3rem 2.5rem 3.1rem;
+  }
 }
 
 .about__wrapper {
@@ -11,6 +14,9 @@
   @include media-tablet {
     flex-direction: column;
     gap: 6.5rem;
+  }
+  @include media-mobile {
+    gap: 0;
   }
 }
 
@@ -35,6 +41,10 @@
     @include font($size: 3.5rem, $height: 4.561rem, $weight: $regular);
     margin-bottom: 5rem;
   }
+  @include media-mobile {
+    @include font($size: 2.5rem, $height: 3.3rem, $weight: $regular);
+    margin-bottom: 10px;
+  }
 }
 
 .title-about_emphasized {
@@ -43,11 +53,17 @@
 
 .about__text {
   @include font($size: 2rem, $height: 3rem);
+  @include media-mobile {
+    @include font($size: 1.5rem, $height: 2.5rem);
+  }
 }
 
 .about__img {
   max-width: 46.4rem;
   @include media-tablet {
     max-width: 25rem;
+  }
+  @include media-mobile {
+    max-width: 15rem;
   }
 }
