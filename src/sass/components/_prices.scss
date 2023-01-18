@@ -3,12 +3,16 @@
   @include media-tablet {
     padding: 4rem 5rem 8.8rem;
   }
+  @include media-mobile {
+    padding: 2.5rem 77px 4rem;
+  }
 }
 
 .prices__wrapper {
   @include flex;
   align-items: flex-start;
   flex-wrap: wrap;
+
 }
 
 .prices__content-left {
@@ -16,6 +20,9 @@
   flex-direction: column;
   max-width: 33.2rem;
   width: 100%;
+  @include media-mobile {
+    max-width: 22.4rem;
+  }
 
   & h2 {
     margin-bottom: 6.0rem;
@@ -23,6 +30,12 @@
       margin-bottom: 5.0rem;
       @include font($size: 3.5rem, $height: 4.23rem, $weight: $bold);
       padding-left: 1.5rem;
+    }
+    @include media-mobile {
+      @include font($size: 2.5rem, $height: 3rem, $weight: $bold);
+      text-align: center;
+      padding-left: 2px;
+      margin-bottom: 35px;
     }
   }
 }
@@ -39,7 +52,10 @@
   padding: 3.4rem 4.1rem;
   border: 1px solid #E3E1D5;
   border-radius: 2.0rem;
-
+  @include media-mobile {
+    padding: 2.9rem 2.2rem;
+    gap: 1.4rem;
+  }
 }
 
 
@@ -51,11 +67,19 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @include media-mobile {
+    margin: 0;
+  }
 }
 
 .accord-object {
-  margin-left: 54px;
+  margin-left: 5.4rem;
   @extend %transition;
+  @include media-mobile {
+    position: absolute;
+    right: 4rem;
+  }
 
   &:hover {
     transform: rotate(180deg);
@@ -68,21 +92,28 @@
 
 //right side prices
 .prices__content-right {
-  max-width: 452px;
+  max-width: 45.2rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+
   @include media-tablet {
     padding-top: 10rem;
+  }
+
+  @include media-mobile {
+    padding-top: 1.2rem;
   }
 
   & button {
     font-weight: 700;
     text-transform: none;
-    margin-top: 42px;
-    margin-bottom: 42px;
+    margin: 4.2rem 0;
     @include media-tablet {
       margin: 3rem 0;
+    }
+    @include media-mobile {
+      margin: 0 5.2rem 0;
     }
   }
 
@@ -90,12 +121,23 @@
     @include media-tablet {
       @include font($size: 2.5rem, $height: 3.5rem, $weight: $bold);
     }
+    @include media-mobile {
+      font-size: 2rem;
+    }
+  }
+}
 
-
+.title-right-2 {
+  @include media-mobile {
+    padding-right: 2.9rem;
+    margin-bottom: 19px;
   }
 }
 
 .prices__img {
   max-width: 152px;
+  @include media-mobile {
+    display: none;
+  }
 }
 
