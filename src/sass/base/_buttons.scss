@@ -33,6 +33,11 @@
   padding: 1.1rem 0;
   text-transform: capitalize;
   min-width: 16.1rem;
+  @include media-mobile {
+    @include font($size: 1.5rem, $height: 2rem);
+    padding: 0.8rem 0;
+    min-width: 12.1rem;
+  }
 
   &_bordered {
     border: 0.1rem solid $color-beta;
