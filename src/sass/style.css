@@ -453,7 +453,7 @@ h3 {
   line-height: 2rem; }
   @media (max-width: 380px) {
     .prices__btn {
-      padding: 16px 10px 15px 30px;
+      padding: 1.6rem 1.0rem 1.5rem 3.0rem;
       font-style: normal;
       font-weight: 700;
       font-size: 1.5rem;
@@ -471,6 +471,9 @@ h3 {
   background: #D6E7D2;
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
   cursor: pointer; }
+  @media (max-width: 380px) {
+    .btn-contact-us {
+      padding: 0.5rem 2.0rem; } }
 
 .hamburger:before, .hamburger:after, .hamburger__line:before, .hamburger__line:after {
   content: '';
@@ -988,7 +991,10 @@ h3 {
   padding: 5.3rem 10.9rem 0 10.9rem; }
   @media (max-width: 768px) {
     .contact-us {
-      padding: 4rem 159px 0; } }
+      padding: 4rem 15.9rem 0; } }
+  @media (max-width: 380px) {
+    .contact-us {
+      padding: 2.5rem 4.2rem 0; } }
 
 .contact-us__wrapper {
   display: flex; }
@@ -1005,7 +1011,11 @@ h3 {
     .contact-us__img {
       max-width: 20rem;
       margin: 0;
-      padding-left: 17px; } }
+      padding-left: 1.7rem; } }
+  @media (max-width: 380px) {
+    .contact-us__img {
+      max-width: 10rem;
+      padding: 0; } }
 
 .contact-us__content {
   max-width: 70.9rem;
@@ -1024,6 +1034,12 @@ h3 {
   @media (max-width: 768px) {
     .contact-us__title {
       margin: 0; } }
+  @media (max-width: 380px) {
+    .contact-us__title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.5rem;
+      line-height: 3.3rem; } }
 
 .contact-us__btn {
   display: flex;
@@ -1033,6 +1049,9 @@ h3 {
     .contact-us__btn {
       width: 100%;
       margin: 10rem 0 25rem; } }
+  @media (max-width: 380px) {
+    .contact-us__btn {
+      margin: 8.4rem 0 13.2rem; } }
 
 .btn-contact-us__title {
   font-style: normal;
