@@ -2,7 +2,10 @@
   background-color: $color-background;
   padding: 5.3rem 10.9rem 0 10.9rem;
   @include media-tablet {
-    padding: 4rem 159px 0;
+    padding: 4rem 15.9rem 0;
+  }
+  @include media-mobile {
+    padding: 2.5rem 4.2rem 0;
   }
 }
 
@@ -21,7 +24,11 @@
   @include media-tablet {
     max-width: 20rem;
     margin: 0;
-    padding-left: 17px;
+    padding-left: 1.7rem;
+  }
+  @include media-mobile {
+    max-width: 10rem;
+    padding: 0;
   }
 }
 
@@ -42,7 +49,10 @@
   margin-right: 6.4rem;
   @include media-tablet {
     margin: 0;
-
+    padding-top: 0.4rem;
+  }
+  @include media-mobile {
+    @include font($size: 2.5rem, $height: 3.3rem, $weight: $bold);
   }
 }
 
@@ -53,6 +63,9 @@
   @include media-tablet {
     width: 100%;
     margin: 10rem 0 25rem;
+  }
+  @include media-mobile {
+    margin: 8.4rem 0 13.2rem;
   }
 }
 
