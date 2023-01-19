@@ -65,7 +65,7 @@
   @include font($size: 2rem, $height: 2rem, $weight: $bold);
 
   @include media-mobile {
-    padding:16px 10px 15px 30px;
+    padding: 1.6rem 1.0rem 1.5rem 3.0rem;
     @include font($size: 1.5rem, $height: 2rem, $weight: $bold);
     position: relative;
   }
@@ -80,4 +80,7 @@
   background: $color-btn-contact;
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  @include media-mobile {
+    padding: 0.5rem 2.0rem;
+  }
 }

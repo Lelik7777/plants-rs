@@ -52,6 +52,9 @@
   padding: 3.4rem 4.1rem;
   border: 1px solid #E3E1D5;
   border-radius: 2.0rem;
+  @include media-tablet {
+    padding: 4rem 4.1rem;
+  }
   @include media-mobile {
     padding: 2.9rem 2.2rem;
     gap: 1.4rem;
