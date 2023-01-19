@@ -2,7 +2,10 @@
   padding: 3.7rem 10.9rem;
   @include font($size: 2rem, $height: 5rem);
   @include media-tablet {
-    padding: 21px 0 28px;
+    padding: 2.1rem 0 2.8rem;
+  }
+  @include media-mobile {
+    padding: 0.7rem 8.5rem 0;
   }
 }
 
@@ -11,7 +14,9 @@
   @include media-tablet {
     flex-direction: column;
   }
-
+  @include media-mobile {
+    position: relative;
+  }
 }
 
 .footer__copyright {
@@ -50,6 +55,10 @@
   display: flex;
   justify-content: flex-end;
   gap: 2.0rem;
+  @include media-mobile {
+    position: absolute;
+    bottom: -2rem;
+  }
 }
 
 .footer__item {
