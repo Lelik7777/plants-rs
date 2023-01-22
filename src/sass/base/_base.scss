@@ -41,3 +41,7 @@ h3 {
 .active {
   @include active;
 }
+//for body on mobile when exist class _active for class hamburger and class navigation
+._lock{
+  overflow: hidden;
+}
