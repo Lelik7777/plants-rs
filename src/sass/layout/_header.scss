@@ -18,6 +18,7 @@ $pad-tablet: 5rem;
 }
 
 .header__logo {
+  z-index: 11;
   padding-left: 10.9rem;
   @include media-tablet {
     padding-left: $pad-tablet;
