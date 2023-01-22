@@ -544,6 +544,7 @@ h3 {
   flex-wrap: wrap; }
 
 .header__logo {
+  z-index: 11;
   padding-left: 10.9rem; }
   @media (max-width: 768px) {
     .header__logo {
@@ -651,7 +652,8 @@ h3 {
   @media (max-width: 380px) {
     .navigation {
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: center;
+      gap: 70px;
       position: fixed;
       width: 100%;
       height: 100%;
@@ -664,7 +666,7 @@ h3 {
       font-weight: 400;
       font-size: 3rem;
       line-height: 2rem;
-      transition: left 0.3s ease 0s; }
+      transition: left 0.5s ease 0s; }
       .navigation._active {
         left: 0; } }
 
