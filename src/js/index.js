@@ -1,18 +1,58 @@
-//hamburger animation
+//constants
+
+//for hamburger
 const $navigation = document.querySelector('.navigation');
 const $hamburger = document.querySelector('.hamburger');
+
+//for section service
+const active = 'btn_active';
+const blur = 'blur';
+const $btnService = document.querySelector('.service__btns');
+const $serviceItems = document.querySelectorAll('.service__item');
+
+/////////////////////////////////////////////////////////////
+
+//hamburger animation
+
 $hamburger.addEventListener('click', function () {
     this.classList.toggle('_active');
     $navigation.classList.toggle('_active');
     document.body.classList.toggle('_lock');
 });
-$navigation.addEventListener('click',function (e) {
+$navigation.addEventListener('click', function (e) {
     document.body.classList.toggle('_lock');
     this.classList.toggle('_active');
     $hamburger.classList.toggle('_active');
 
-})
+});
+///////////////////////////////////////////////////////////////
 
+//button connections for section service
+$btnService.addEventListener('click', function (e) {
+    const btn = e.target;
+    //get button name
+    const nameBtn = btn.className.match(/btn__[a-z]+/g).join('');
+
+    //add and remove class btn_active for buttons
+    [...$btnService.children].forEach(item => {
+        item.classList.remove(active);
+        if (item.classList.contains(nameBtn)) {
+            item.classList.add(active);
+        }
+    });
+//add blur for images or remove
+    [...$serviceItems].forEach(item => {
+
+        const nameItem = item.getAttribute('class').replace(/[a-z]+__[a-z]+|blur/g, '').trim();
+
+        item.classList.add(blur);
+        if (nameItem === nameBtn.replace(/btn__/g, '').trim()) {
+            item.classList.remove(blur);
+        }
+    })
+
+})
+//////////////////////////////////////////////////////////////
 console.log(
     `
 Вёрстка соответствует макету. Ширина экрана 768px +24

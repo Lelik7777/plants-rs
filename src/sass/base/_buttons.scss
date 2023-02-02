@@ -84,3 +84,8 @@
     padding: 0.5rem 2.0rem;
   }
 }
+.btn_active{
+  background-color: $color-beta;
+  border: 0.1rem solid $color-beta;
+  color: $color-light;
+}

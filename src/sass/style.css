@@ -478,6 +478,11 @@ h3 {
     .btn-contact-us {
       padding: 0.5rem 2.0rem; } }
 
+.btn_active {
+  background-color: #E06733;
+  border: 0.1rem solid #E06733;
+  color: #fff; }
+
 .hamburger:before, .hamburger:after, .hamburger__line:before, .hamburger__line:after {
   content: '';
   width: 100%;
@@ -906,6 +911,9 @@ h3 {
       line-height: 2rem;
       max-width: 20.1rem;
       width: 100%; } }
+
+.blur {
+  filter: blur(4px); }
 
 .prices {
   padding: 3.5rem 10.9rem 12.1rem 10.9rem; }
