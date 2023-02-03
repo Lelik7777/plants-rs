@@ -40,39 +40,38 @@ $navigation.addEventListener('click', function (e) {
 
 });
 ///////////////////////////////////////////////////////////////
-let count = 0;
+
 //button connections for section service
+let count = 0;
 $btnService.addEventListener('click', function (e) {
     const btn = e.target;
-    // console.log(btn.classList.contains(active));
     //get button name
-    const nameBtn = btn.className.match(/btn__[a-z]+/g).join('');
+    const nameBtn = btn.className.match(/btn__[a-z]+/g).join('').replace(/btn__/g, '');
 
+    function setBlur(arr, name) {
+        arr.forEach(item => {
+            const nameItem = item.getAttribute('class').replace(/[a-z]+__[a-z]+|blur/g, '').trim();
+            if (nameItem === name) {
+                item.classList.toggle(blur);
+            }
+        });
+
+    }
+
+    if (count === 0) [...$serviceItems].forEach(it => it.classList.add(blur));
     //add and remove class btn_active for buttons
     if (btn.classList.contains(btnActive)) {
-        console.log('remove')
         btn.classList.remove(btnActive);
         --count;
+        setBlur([...$serviceItems], nameBtn);
     } else {
         if (count === 2) return;
-        console.log('add')
         btn.classList.add(btnActive);
         ++count;
+        setBlur([...$serviceItems], nameBtn);
     }
-    console.log(count);
-//add blur for images or remove
-    [...$serviceItems].forEach(item => {
 
-        const nameItem = item.getAttribute('class').replace(/[a-z]+__[a-z]+|blur/g, '').trim();
-
-        if (!item.classList.contains(blur))
-            item.classList.add(blur);
-        if (nameItem === nameBtn.replace(/btn__/g, '').trim()) {
-            item.classList.remove(blur);
-        }
-    })
-
-})
+});
 //////////////////////////////////////////////////////////////
 
 

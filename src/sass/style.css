@@ -421,7 +421,7 @@ h3 {
   padding: 1.1rem 0;
   text-transform: capitalize;
   min-width: 16.1rem;
-  transition: background-color 0.4s; }
+  transition: background-color 0.5s; }
   @media (max-width: 380px) {
     .btn-2 {
       font-style: normal;

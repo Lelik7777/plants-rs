@@ -33,7 +33,7 @@
   padding: 1.1rem 0;
   text-transform: capitalize;
   min-width: 16.1rem;
-  transition: background-color 0.4s;
+  transition: background-color 0.5s;
   @include media-mobile {
     @include font($size: 1.5rem, $height: 2rem);
     padding: 0.8rem 0;
