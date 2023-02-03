@@ -39,36 +39,38 @@ $navigation.addEventListener('click', function (e) {
     $hamburger.classList.toggle('_active');
 
 });
+
 ///////////////////////////////////////////////////////////////
 
-//button connections for section service
+//button connections for section service and implementation of blur for images
 let count = 0;
 $btnService.addEventListener('click', function (e) {
     const btn = e.target;
     //get button name
     const nameBtn = btn.className.match(/btn__[a-z]+/g).join('').replace(/btn__/g, '');
 
-    function setBlur(arr, name) {
-        arr.forEach(item => {
-            const nameItem = item.getAttribute('class').replace(/[a-z]+__[a-z]+|blur/g, '').trim();
-            if (nameItem === name) {
-                item.classList.toggle(blur);
-            }
-        });
+    const setBlur = (arr, name, effect) => arr.forEach(item => {
+        const nameItem = item.getAttribute('class').replace(/[a-z]+__[a-z]+|blur/g, '').trim();
+        nameItem === name && item.classList.toggle(effect);
+    });
+    const changeBlur = (arr, effect, type = true) =>
+        arr.forEach(el => type ? el.classList.add(effect) : el.classList.remove(effect));
 
-    }
+    count === 0 && changeBlur([...$serviceItems], blur);
 
-    if (count === 0) [...$serviceItems].forEach(it => it.classList.add(blur));
+
     //add and remove class btn_active for buttons
     if (btn.classList.contains(btnActive)) {
         btn.classList.remove(btnActive);
         --count;
-        setBlur([...$serviceItems], nameBtn);
+        setBlur([...$serviceItems], nameBtn, blur);
+        count === 0 && changeBlur([...$serviceItems], blur, false);
+
     } else {
         if (count === 2) return;
         btn.classList.add(btnActive);
         ++count;
-        setBlur([...$serviceItems], nameBtn);
+        setBlur([...$serviceItems], nameBtn, blur);
     }
 
 });
