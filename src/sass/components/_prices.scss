@@ -69,6 +69,7 @@
   flex-direction: column;
   background-color: $color-btn-contact;
   border-radius: 25px;
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -145,6 +146,14 @@
     font-weight: 700;
     text-transform: none;
     margin: 4.2rem 0;
+
+    &:hover {
+      background-color: $color-beta;
+      border: 0.1rem solid $color-beta;
+      color: $color-light;
+      @extend %transition;
+    }
+
     @include media-tablet {
       margin: 3rem 0;
     }

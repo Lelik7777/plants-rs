@@ -333,7 +333,7 @@ body, h1, h3, .btn-1, .welcome__content, .prices__title, .btn-contact-us__title 
 h2, .btn-2, .header, .logo-text {
   font-family: 'Inika', 'Verdana', sans-serif; }
 
-.btn-1:hover, .btn-2:hover, .github:hover, .footer__ref:hover, .navigation__link, .accord-object {
+.btn-1:hover, .github:hover, .footer__ref:hover, .navigation__link, .accord-object, .prices__content-right button:hover {
   transition: all .5s ease-out; }
 
 html {
@@ -435,10 +435,6 @@ h3 {
   .btn-2_colored {
     background-color: #E06733;
     border: 0.1rem solid #E06733; }
-  .btn-2:hover {
-    background-color: #E06733;
-    border: 0.1rem solid #E06733;
-    color: #fff; }
 
 .prices__btn {
   padding: 1.6rem 4rem;
@@ -1062,6 +1058,10 @@ h3 {
     font-weight: 700;
     text-transform: none;
     margin: 4.2rem 0; }
+    .prices__content-right button:hover {
+      background-color: #E06733;
+      border: 0.1rem solid #E06733;
+      color: #fff; }
     @media (max-width: 768px) {
       .prices__content-right button {
         margin: 3rem 0; } }

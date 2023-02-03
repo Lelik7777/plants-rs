@@ -5,7 +5,7 @@ const $navigation = document.querySelector('.navigation');
 const $hamburger = document.querySelector('.hamburger');
 
 //for section service
-const active = 'btn_active';
+const btnActive = 'btn_active';
 const blur = 'blur';
 const $btnService = document.querySelector('.service__btns');
 const $serviceItems = document.querySelectorAll('.service__item');
@@ -40,27 +40,26 @@ $navigation.addEventListener('click', function (e) {
 
 });
 ///////////////////////////////////////////////////////////////
-
+let count = 0;
 //button connections for section service
 $btnService.addEventListener('click', function (e) {
     const btn = e.target;
+    // console.log(btn.classList.contains(active));
     //get button name
     const nameBtn = btn.className.match(/btn__[a-z]+/g).join('');
 
-    let count =3;
     //add and remove class btn_active for buttons
-    [...$btnService.children].forEach(item => {
-        if(count<3&&count>2){
-            item.classList.remove(active);
-            count++;
-        }
-
-        if (item.classList.contains(nameBtn)) {
-            item.classList.add(active);
-            count--;
-        }
-        console.log(count)
-    });
+    if (btn.classList.contains(btnActive)) {
+        console.log('remove')
+        btn.classList.remove(btnActive);
+        --count;
+    } else {
+        if (count === 2) return;
+        console.log('add')
+        btn.classList.add(btnActive);
+        ++count;
+    }
+    console.log(count);
 //add blur for images or remove
     [...$serviceItems].forEach(item => {
 
