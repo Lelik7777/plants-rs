@@ -420,7 +420,8 @@ h3 {
   text-align: center;
   padding: 1.1rem 0;
   text-transform: capitalize;
-  min-width: 16.1rem; }
+  min-width: 16.1rem;
+  transition: background-color 0.4s; }
   @media (max-width: 380px) {
     .btn-2 {
       font-style: normal;
@@ -453,7 +454,8 @@ h3 {
   font-style: normal;
   font-weight: 700;
   font-size: 2rem;
-  line-height: 2rem; }
+  line-height: 2rem;
+  transition: background-color 0.2s; }
   @media (max-width: 380px) {
     .prices__btn {
       padding: 1.6rem 1.0rem 1.5rem 3.0rem;
@@ -478,10 +480,27 @@ h3 {
     .btn-contact-us {
       padding: 0.5rem 2.0rem; } }
 
+.prices__btn_active {
+  background-color: #D6E7D2; }
+
 .btn_active {
   background-color: #E06733;
   border: 0.1rem solid #E06733;
   color: #fff; }
+
+.accordion__btn {
+  color: #717171;
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding: 3px 20px;
+  border: none;
+  margin: 12px 0; }
 
 .hamburger:before, .hamburger:after, .hamburger__line:before, .hamburger__line:after {
   content: '';
@@ -889,7 +908,8 @@ h3 {
   justify-content: space-between;
   border: 1px solid #E3E1D5;
   border-radius: 2.0rem 2.0rem 2.0rem 2.0rem;
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+  transition: filter 0.5s; }
   @media (max-width: 768px) {
     .service__item {
       max-width: 28rem;
@@ -965,6 +985,7 @@ h3 {
 .prices__items {
   display: flex;
   flex-direction: column;
+  gap: 30px;
   padding: 3.4rem 4.1rem;
   border: 1px solid #E3E1D5;
   border-radius: 2.0rem; }
@@ -979,12 +1000,40 @@ h3 {
 .prices__item {
   width: auto;
   display: flex;
-  margin-bottom: 30px; }
+  flex-direction: column;
+  background-color: #D6E7D2;
+  border-radius: 25px; }
   .prices__item:last-child {
     margin-bottom: 0; }
   @media (max-width: 380px) {
     .prices__item {
       margin: 0; } }
+
+.item__accordion {
+  margin: 0 40px;
+  border-top: 0.5px solid #aea1a1;
+  display: none; }
+  .prices__item.price_open .item__accordion {
+    display: block; }
+
+.accordion__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1rem;
+  padding: 6px 0;
+  color: #717171; }
+
+.accordion__price {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2rem; }
+  .accordion__price span {
+    color: #E06733;
+    font-weight: 700; }
+  .accordion__price span:last-child {
+    font-size: 1.6rem; }
 
 .accord-object {
   margin-left: 5.4rem; }

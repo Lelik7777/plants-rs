@@ -10,6 +10,20 @@ const blur = 'blur';
 const $btnService = document.querySelector('.service__btns');
 const $serviceItems = document.querySelectorAll('.service__item');
 
+//for section prices
+const activePrice = 'prices__btn_active';
+const $pricesItems = document.querySelector('.prices__items');
+const $btnsPrices = $pricesItems.querySelectorAll('.prices__btn');
+
+
+[...$btnsPrices].forEach(btn => {
+    console.log(btn.textContent.trim().toLowerCase());
+})
+$pricesItems.addEventListener('click', function (e) {
+    e.target.closest('.prices__item').classList.toggle('price_open');
+    //change bg button
+    e.target.closest('.prices__btn').classList.toggle(activePrice);
+});
 /////////////////////////////////////////////////////////////
 
 //hamburger animation
@@ -33,19 +47,27 @@ $btnService.addEventListener('click', function (e) {
     //get button name
     const nameBtn = btn.className.match(/btn__[a-z]+/g).join('');
 
+    let count =3;
     //add and remove class btn_active for buttons
     [...$btnService.children].forEach(item => {
-        item.classList.remove(active);
+        if(count<3&&count>2){
+            item.classList.remove(active);
+            count++;
+        }
+
         if (item.classList.contains(nameBtn)) {
             item.classList.add(active);
+            count--;
         }
+        console.log(count)
     });
 //add blur for images or remove
     [...$serviceItems].forEach(item => {
 
         const nameItem = item.getAttribute('class').replace(/[a-z]+__[a-z]+|blur/g, '').trim();
 
-        item.classList.add(blur);
+        if (!item.classList.contains(blur))
+            item.classList.add(blur);
         if (nameItem === nameBtn.replace(/btn__/g, '').trim()) {
             item.classList.remove(blur);
         }
@@ -53,33 +75,35 @@ $btnService.addEventListener('click', function (e) {
 
 })
 //////////////////////////////////////////////////////////////
-console.log(
-    `
-Вёрстка соответствует макету. Ширина экрана 768px +24
-блок <header> +2
-секция welcome +3
-секция about +4
-секция service +4
-секция prices +4
-секция contacts +4
-блок <footer> + 3
-Вёрстка соответствует макету. Ширина экрана 380px +24
-блок <header> +2
-секция welcome +3
-секция about +4
-секция service +4
-секция prices +4
-секция contacts +4
-блок <footer> + 3
-Ни на одном из разрешений до 320px включительно не появляется горизонтальная полоса прокрутки. Весь контент страницы при этом сохраняется: не обрезается и не удаляется +15
-нет полосы прокрутки при ширине страницы от 1440рх до 380px +7
-нет полосы прокрутки при ширине страницы от 380px до 320рх +8
-На ширине экрана 380рх и меньше реализовано адаптивное меню +22 (Допускается появление адаптивного меня на ширине более 380, но не допускается на ширине более 770px)
-при ширине страницы 380рх панель навигации скрывается, появляется бургер-иконка +2
-при нажатии на бургер-иконку плавно появляется адаптивное меню +4
-адаптивное меню соответствует цветовой схеме макета +4
-при нажатии на крестик адаптивное меню плавно скрывается уезжая за экран +4
-ссылки в адаптивном меню работают, обеспечивая плавную прокрутку по якорям +4
-при клике по ссылке в адаптивном меню адаптивное меню плавно скрывается, также скрытие меню происходит если сделать клик вне данного окна +4
-Баллы: 75
-`)
+
+
+// console.log(
+//     `
+// Вёрстка соответствует макету. Ширина экрана 768px +24
+// блок <header> +2
+// секция welcome +3
+// секция about +4
+// секция service +4
+// секция prices +4
+// секция contacts +4
+// блок <footer> + 3
+// Вёрстка соответствует макету. Ширина экрана 380px +24
+// блок <header> +2
+// секция welcome +3
+// секция about +4
+// секция service +4
+// секция prices +4
+// секция contacts +4
+// блок <footer> + 3
+// Ни на одном из разрешений до 320px включительно не появляется горизонтальная полоса прокрутки. Весь контент страницы при этом сохраняется: не обрезается и не удаляется +15
+// нет полосы прокрутки при ширине страницы от 1440рх до 380px +7
+// нет полосы прокрутки при ширине страницы от 380px до 320рх +8
+// На ширине экрана 380рх и меньше реализовано адаптивное меню +22 (Допускается появление адаптивного меня на ширине более 380, но не допускается на ширине более 770px)
+// при ширине страницы 380рх панель навигации скрывается, появляется бургер-иконка +2
+// при нажатии на бургер-иконку плавно появляется адаптивное меню +4
+// адаптивное меню соответствует цветовой схеме макета +4
+// при нажатии на крестик адаптивное меню плавно скрывается уезжая за экран +4
+// ссылки в адаптивном меню работают, обеспечивая плавную прокрутку по якорям +4
+// при клике по ссылке в адаптивном меню адаптивное меню плавно скрывается, также скрытие меню происходит если сделать клик вне данного окна +4
+// Баллы: 75
+// `)

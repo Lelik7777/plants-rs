@@ -8,8 +8,9 @@
     <!--google fonts: Inika 400,700 and Inter 400,700-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@300;400;700&display=swap"
           rel="stylesheet">
+
     <!--favicon-->
     <link rel="icon" type="image/x-icon" href="./src/img/logo/logo_vector.svg">
     <link rel="stylesheet" href="./src/sass/style.css">
@@ -165,7 +166,7 @@
             <div class="prices__content-left">
                 <h2 class="title prices__title title-left">Prices</h2>
                 <ul class="prices__items">
-                    <li class="prices__item">
+                    <li class="prices__item basics">
                         <button class="prices__btn">
                             <span class="title btn-title">Basics</span>
                             <object class="accord-object" data="src/img/icons/accordion_btn.svg" type="image/svg+xml">
@@ -173,8 +174,18 @@
                                 <img src="src/img/icons/accordion_btn.png" alt="accordion">
                             </object>
                         </button>
+                        <div class="item__accordion">
+                            <p class=" accordion__text">Release of Letraset sheets containing Lorem Ipsum passages, and
+                                more recently</p>
+                            <p class="accordion__price">
+                                <span>&dollar;</span>
+                                <span>25</span>
+                                &sol; per hour
+                            </p>
+                            <button class="accordion__btn">Order</button>
+                        </div>
                     </li>
-                    <li class="prices__item">
+                    <li class="prices__item standart">
                         <button class="prices__btn">
                             <span class="title btn-title">Standard</span>
                             <object class="accord-object" data="src/img/icons/accordion_btn.svg" type="image/svg+xml">
@@ -182,8 +193,19 @@
                                 <img src="src/img/icons/accordion_btn.png" alt="accordion">
                             </object>
                         </button>
+                        <!-- added block accordion-->
+                        <div class="item__accordion">
+                            <p class=" accordion__text">Release of Letraset sheets containing Lorem Ipsum passages, and
+                                more recently</p>
+                            <p class="accordion__price">
+                                <span>&dollar;</span>
+                                    <span>25</span>
+                                    &sol; per hour
+                            </p>
+                            <button class="accordion__btn">Order</button>
+                        </div>
                     </li>
-                    <li class="prices__item">
+                    <li class="prices__item pro">
                         <button class="prices__btn">
                             <span class="title btn-title">Pro care</span>
                             <object class="accord-object" data="src/img/icons/accordion_btn.svg" type="image/svg+xml">
@@ -191,6 +213,16 @@
                                 <img src="src/img/icons/accordion_btn.png" alt="accordion">
                             </object>
                         </button>
+                        <div class="item__accordion">
+                            <p class=" accordion__text">Release of Letraset sheets containing Lorem Ipsum passages, and
+                                more recently</p>
+                            <p class="accordion__price">
+                                <span>&dollar;</span>
+                                <span>25</span>
+                                &sol; per hour
+                            </p>
+                            <button class="accordion__btn">Order</button>
+                        </div>
                     </li>
                 </ul>
             </div>
