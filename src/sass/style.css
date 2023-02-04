@@ -1008,7 +1008,8 @@ h3 {
 .item__accordion {
   margin: 0 40px;
   border-top: 0.5px solid #aea1a1;
-  display: none; }
+  display: none;
+  transition: all 2s; }
   .prices__item.price_open .item__accordion {
     display: block; }
 
@@ -1032,7 +1033,8 @@ h3 {
     font-size: 1.6rem; }
 
 .accord-object {
-  margin-left: 5.4rem; }
+  margin-left: 5.4rem;
+  pointer-events: none; }
   @media (max-width: 380px) {
     .accord-object {
       position: absolute;

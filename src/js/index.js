@@ -14,15 +14,20 @@ const $serviceItems = document.querySelectorAll('.service__item');
 const activePrice = 'prices__btn_active';
 const $pricesItems = document.querySelector('.prices__items');
 const $btnsPrices = $pricesItems.querySelectorAll('.prices__btn');
+//const $btnOrder=document.querySelector('.accordion__btn');
 
-
+// prices
 [...$btnsPrices].forEach(btn => {
-    console.log(btn.textContent.trim().toLowerCase());
+    // console.log(btn.textContent.trim().toLowerCase());
 })
+
 $pricesItems.addEventListener('click', function (e) {
-    e.target.closest('.prices__item').classList.toggle('price_open');
-    //change bg button
-    e.target.closest('.prices__btn').classList.toggle(activePrice);
+    console.log(e.target)
+    if (e.target.closest('.prices__btn')) {
+        e.target.closest('.prices__item').classList.toggle('price_open');
+        //change bg button
+        e.target.closest('.prices__btn').classList.toggle(activePrice);
+    }
 });
 /////////////////////////////////////////////////////////////
 
@@ -55,7 +60,7 @@ $btnService.addEventListener('click', function (e) {
     });
     const changeBlur = (arr, effect, type = true) =>
         arr.forEach(el => type ? el.classList.add(effect) : el.classList.remove(effect));
-
+//добавляем blur для всех картинок вначале
     count === 0 && changeBlur([...$serviceItems], blur);
 
 
@@ -64,6 +69,7 @@ $btnService.addEventListener('click', function (e) {
         btn.classList.remove(btnActive);
         --count;
         setBlur([...$serviceItems], nameBtn, blur);
+        //обнуляем blur для всех картинок,когда неактивны все кнопки
         count === 0 && changeBlur([...$serviceItems], blur, false);
 
     } else {
