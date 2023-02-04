@@ -16,11 +16,12 @@ const $pricesItems = document.querySelector('.prices__items');
 const $btnsPrices = $pricesItems.querySelectorAll('.prices__btn');
 //const $btnOrder=document.querySelector('.accordion__btn');
 
+
 // prices
-
-
 $pricesItems.addEventListener('click', function (e) {
+    //block close opened accordion when press button 'Order'
     if (e.target.closest('.accordion__btn')) return;
+
     //close all accordions except current
     [...$btnsPrices].forEach(btn => {
         if (btn !== e.target) {
@@ -28,15 +29,12 @@ $pricesItems.addEventListener('click', function (e) {
             btn.closest('.prices__item').classList.remove('price_open');
         }
     });
-
+//logic accordion
     if (e.target.closest('.prices__btn')) {
         e.target.closest('.prices__item').classList.toggle('price_open');
         //change bg button
         e.target.closest('.prices__btn').classList.toggle(activePrice);
     }
-
-
-    //
 
 });
 /////////////////////////////////////////////////////////////

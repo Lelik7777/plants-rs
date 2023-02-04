@@ -120,7 +120,7 @@
     right: 4rem;
   }
 
-  &:hover {
+  .prices__btn.prices__btn_active & {
     transform: rotate(180deg);
   }
 }

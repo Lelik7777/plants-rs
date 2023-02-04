@@ -1039,7 +1039,7 @@ h3 {
     .accord-object {
       position: absolute;
       right: 4rem; } }
-  .accord-object:hover {
+  .prices__btn.prices__btn_active .accord-object {
     transform: rotate(180deg); }
 
 .accord-object__circle:hover {
