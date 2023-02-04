@@ -1166,4 +1166,18 @@ h3 {
   font-size: 2rem;
   line-height: 4rem; }
 
+.contact-us__list {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 4rem;
+  color: #499A18;
+  padding: 27px 35px 31px; }
+  .contact-us__list li {
+    padding-left: 6px; }
+  .contact-us__list li:hover {
+    color: #717171;
+    border-bottom: 1px solid #717171;
+    cursor: pointer; }
+
 /*# sourceMappingURL=style.css.map */

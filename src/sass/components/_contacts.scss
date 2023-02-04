@@ -74,3 +74,20 @@
   @extend %font-family-alpha;
   @include font($size: 2rem, $height: 4rem)
 }
+
+//accordion
+.contact-us__list {
+  @include font($size: 1.6rem, $height: 4rem);
+  color: $color-alpha;
+  padding: 27px 35px 31px;
+
+  & li {
+    padding-left: 6px;
+  }
+
+  & li:hover {
+    color: $color-text-secondary;
+    border-bottom: 1px solid $color-text-secondary;
+    cursor: pointer;
+  }
+}
