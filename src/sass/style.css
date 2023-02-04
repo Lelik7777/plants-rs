@@ -1149,6 +1149,7 @@ h3 {
 
 .contact-us__btn {
   display: flex;
+  flex-direction: column;
   flex-grow: 1;
   margin-top: 8.8rem; }
   @media (max-width: 768px) {
