@@ -333,7 +333,7 @@ body, h1, h3, .btn-1, .welcome__content, .prices__title, .btn-contact-us__title 
 h2, .btn-2, .header, .logo-text {
   font-family: 'Inika', 'Verdana', sans-serif; }
 
-.btn-1:hover, .btn-2:hover, .github:hover, .footer__ref:hover, .navigation__link, .accord-object {
+.btn-1:hover, .github:hover, .footer__ref:hover, .navigation__link, .accord-object, .prices__content-right button:hover {
   transition: all .5s ease-out; }
 
 html {
@@ -420,7 +420,8 @@ h3 {
   text-align: center;
   padding: 1.1rem 0;
   text-transform: capitalize;
-  min-width: 16.1rem; }
+  min-width: 16.1rem;
+  transition: background-color 0.5s; }
   @media (max-width: 380px) {
     .btn-2 {
       font-style: normal;
@@ -434,10 +435,6 @@ h3 {
   .btn-2_colored {
     background-color: #E06733;
     border: 0.1rem solid #E06733; }
-  .btn-2:hover {
-    background-color: #E06733;
-    border: 0.1rem solid #E06733;
-    color: #fff; }
 
 .prices__btn {
   padding: 1.6rem 4rem;
@@ -453,7 +450,8 @@ h3 {
   font-style: normal;
   font-weight: 700;
   font-size: 2rem;
-  line-height: 2rem; }
+  line-height: 2rem;
+  transition: background-color 0.2s; }
   @media (max-width: 380px) {
     .prices__btn {
       padding: 1.6rem 1.0rem 1.5rem 3.0rem;
@@ -477,6 +475,28 @@ h3 {
   @media (max-width: 380px) {
     .btn-contact-us {
       padding: 0.5rem 2.0rem; } }
+
+.prices__btn_active {
+  background-color: #D6E7D2; }
+
+.btn_active {
+  background-color: #E06733;
+  border: 0.1rem solid #E06733;
+  color: #fff; }
+
+.accordion__btn {
+  color: #717171;
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding: 3px 20px;
+  border: none;
+  margin: 12px 0; }
 
 .hamburger:before, .hamburger:after, .hamburger__line:before, .hamburger__line:after {
   content: '';
@@ -884,7 +904,8 @@ h3 {
   justify-content: space-between;
   border: 1px solid #E3E1D5;
   border-radius: 2.0rem 2.0rem 2.0rem 2.0rem;
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+  transition: filter 0.5s; }
   @media (max-width: 768px) {
     .service__item {
       max-width: 28rem;
@@ -906,6 +927,9 @@ h3 {
       line-height: 2rem;
       max-width: 20.1rem;
       width: 100%; } }
+
+.blur {
+  filter: blur(4px); }
 
 .prices {
   padding: 3.5rem 10.9rem 12.1rem 10.9rem; }
@@ -957,6 +981,7 @@ h3 {
 .prices__items {
   display: flex;
   flex-direction: column;
+  gap: 30px;
   padding: 3.4rem 4.1rem;
   border: 1px solid #E3E1D5;
   border-radius: 2.0rem; }
@@ -971,20 +996,50 @@ h3 {
 .prices__item {
   width: auto;
   display: flex;
-  margin-bottom: 30px; }
+  flex-direction: column;
+  background-color: #D6E7D2;
+  border-radius: 25px; }
   .prices__item:last-child {
     margin-bottom: 0; }
   @media (max-width: 380px) {
     .prices__item {
       margin: 0; } }
 
+.item__accordion {
+  margin: 0 40px;
+  border-top: 0.5px solid #aea1a1;
+  display: none;
+  transition: all 2s; }
+  .prices__item.price_open .item__accordion {
+    display: block; }
+
+.accordion__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1rem;
+  padding: 6px 0;
+  color: #717171; }
+
+.accordion__price {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2rem; }
+  .accordion__price span {
+    color: #E06733;
+    font-weight: 700; }
+  .accordion__price span:last-child {
+    font-size: 1.6rem; }
+
 .accord-object {
-  margin-left: 5.4rem; }
+  margin-left: 5.4rem;
+  pointer-events: none; }
   @media (max-width: 380px) {
     .accord-object {
       position: absolute;
       right: 4rem; } }
-  .accord-object:hover {
+  .prices__btn.prices__btn_active .accord-object {
     transform: rotate(180deg); }
 
 .accord-object__circle:hover {
@@ -1005,6 +1060,10 @@ h3 {
     font-weight: 700;
     text-transform: none;
     margin: 4.2rem 0; }
+    .prices__content-right button:hover {
+      background-color: #E06733;
+      border: 0.1rem solid #E06733;
+      color: #fff; }
     @media (max-width: 768px) {
       .prices__content-right button {
         margin: 3rem 0; } }
@@ -1090,6 +1149,7 @@ h3 {
 
 .contact-us__btn {
   display: flex;
+  flex-direction: column;
   flex-grow: 1;
   margin-top: 8.8rem; }
   @media (max-width: 768px) {
@@ -1105,5 +1165,19 @@ h3 {
   font-weight: 400;
   font-size: 2rem;
   line-height: 4rem; }
+
+.contact-us__list {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 4rem;
+  color: #499A18;
+  padding: 27px 35px 31px; }
+  .contact-us__list li {
+    padding-left: 6px; }
+  .contact-us__list li:hover {
+    color: #717171;
+    border-bottom: 1px solid #717171;
+    cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
