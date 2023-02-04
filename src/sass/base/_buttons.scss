@@ -33,6 +33,7 @@
   padding: 1.1rem 0;
   text-transform: capitalize;
   min-width: 16.1rem;
+  transition: background-color 0.5s;
   @include media-mobile {
     @include font($size: 1.5rem, $height: 2rem);
     padding: 0.8rem 0;
@@ -48,12 +49,6 @@
     border: 0.1rem solid $color-beta;
   }
 
-  &:hover {
-    background-color: $color-beta;
-    border: 0.1rem solid $color-beta;
-    color: $color-light;
-    @extend %transition;
-  }
 }
 
 .prices__btn {
@@ -63,7 +58,7 @@
   flex-grow: 1;
   border: none;
   @include font($size: 2rem, $height: 2rem, $weight: $bold);
-
+  transition: background-color 0.2s;
   @include media-mobile {
     padding: 1.6rem 1.0rem 1.5rem 3.0rem;
     @include font($size: 1.5rem, $height: 2rem, $weight: $bold);
@@ -83,4 +78,25 @@
   @include media-mobile {
     padding: 0.5rem 2.0rem;
   }
+}
+
+.prices__btn_active {
+  background-color: $color-btn-contact;
+}
+
+//for buttons in section service
+.btn_active {
+  background-color: $color-beta;
+  border: 0.1rem solid $color-beta;
+  color: $color-light;
+}
+
+
+//for prices section
+.accordion__btn {
+  @include button($color: $color-text-secondary, $radius: 10px, $bg: #fff);
+  @include font($size: 1.4rem, $height: 2rem, $weight: $bold);
+  padding: 3px 20px;
+  border: none;
+  margin: 12px 0;
 }

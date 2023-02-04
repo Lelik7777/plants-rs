@@ -58,6 +58,7 @@
 
 .contact-us__btn {
   display: flex;
+  flex-direction: column;
   flex-grow: 1;
   margin-top: 8.8rem;
   @include media-tablet {
@@ -72,4 +73,21 @@
 .btn-contact-us__title {
   @extend %font-family-alpha;
   @include font($size: 2rem, $height: 4rem)
+}
+
+//accordion
+.contact-us__list {
+  @include font($size: 1.6rem, $height: 4rem);
+  color: $color-alpha;
+  padding: 27px 35px 31px;
+
+  & li {
+    padding-left: 6px;
+  }
+
+  & li:hover {
+    color: $color-text-secondary;
+    border-bottom: 1px solid $color-text-secondary;
+    cursor: pointer;
+  }
 }
