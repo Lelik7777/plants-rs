@@ -17,17 +17,27 @@ const $btnsPrices = $pricesItems.querySelectorAll('.prices__btn');
 //const $btnOrder=document.querySelector('.accordion__btn');
 
 // prices
-[...$btnsPrices].forEach(btn => {
-    // console.log(btn.textContent.trim().toLowerCase());
-})
+
 
 $pricesItems.addEventListener('click', function (e) {
-    console.log(e.target)
+    if (e.target.closest('.accordion__btn')) return;
+    //close all accordions except current
+    [...$btnsPrices].forEach(btn => {
+        if (btn !== e.target) {
+            btn.classList.remove(activePrice);
+            btn.closest('.prices__item').classList.remove('price_open');
+        }
+    });
+
     if (e.target.closest('.prices__btn')) {
         e.target.closest('.prices__item').classList.toggle('price_open');
         //change bg button
         e.target.closest('.prices__btn').classList.toggle(activePrice);
     }
+
+
+    //
+
 });
 /////////////////////////////////////////////////////////////
 
