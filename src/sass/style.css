@@ -330,7 +330,7 @@ h1, h2, p {
 body, h1, h3, .btn-1, .welcome__content, .prices__title, .btn-contact-us__title {
   font-family: 'Inter', 'Verdana', sans-serif; }
 
-h2, .btn-2, .header, .logo-text {
+h2, .btn-2, .card__button, .header, .logo-text {
   font-family: 'Inika', 'Verdana', sans-serif; }
 
 .btn-1:hover, .github:hover, .footer__ref:hover, .navigation__link, .accord-object, .prices__content-right button:hover {
@@ -478,6 +478,17 @@ h3 {
 
 .prices__btn_active {
   background-color: #D6E7D2; }
+
+.card__button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  padding: 7px 29px;
+  width: 122px;
+  border-radius: 5px;
+  border: 1px solid #E06733;
+  background-color: inherit; }
 
 .btn_active {
   background-color: #E06733;
@@ -1179,5 +1190,25 @@ h3 {
     color: #717171;
     border-bottom: 1px solid #717171;
     cursor: pointer; }
+
+.drop-block {
+  color: #717171;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 4rem; }
+
+.drop-block__card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: #EDF2EC;
+  border: 1px solid #000;
+  padding: 17px 76px 32px 33px;
+  margin-top: 47px; }
+
+.card__button {
+  margin-top: 24px;
+  align-self: center; }
 
 /*# sourceMappingURL=style.css.map */

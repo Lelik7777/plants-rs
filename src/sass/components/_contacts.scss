@@ -91,3 +91,24 @@
     cursor: pointer;
   }
 }
+
+//block for city
+.drop-block {
+  color: $color-text-secondary;
+  @include font($size: 1.6rem, $height: 4rem);
+}
+
+.drop-block__card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: $color-background;
+  border: 1px solid #000;
+  padding: 17px 76px 32px 33px;
+  margin-top: 47px;
+}
+
+.card__button {
+  margin-top: 24px;
+  align-self: center;
+}
