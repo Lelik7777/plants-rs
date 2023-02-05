@@ -7,22 +7,30 @@ const getClosestEl = (selector, event) => event.target.closest(selector);
 //for hamburger
 const $navigation = document.querySelector('.navigation');
 const $hamburger = document.querySelector('.hamburger');
+const lock = '_lock';
 
 //for section service
 const btnActive = 'btn_active';
 const blur = 'blur';
+let count = 0;
 const $btnService = document.querySelector('.service__btns');
 const $serviceItems = document.querySelectorAll('.service__item');
 
 //for section prices
 const activePrice = 'prices__btn_active';
+const accordionBtn = '.accordion__btn';
+const pricesBtn = '.prices__btn';
+const priceOpen = 'price_open';
 const $pricesItems = document.querySelector('.prices__items');
 const $btnsPrices = $pricesItems.querySelectorAll('.prices__btn');
+
 
 //for section contact us
 const $contactUs = document.querySelector('.contact-us__btn');
 const active = '_active';
 const btnContact = '.btn-contact-us';
+const open = '_open';
+const bgButtonCity = ' #C1E698';
 const listContact = '.contact-us__list';
 const $namesCities = document.querySelectorAll('.drop-block');
 
@@ -32,22 +40,21 @@ const $namesCities = document.querySelectorAll('.drop-block');
 //hamburger animation
 
 $hamburger.addEventListener('click', function () {
-    this.classList.toggle('_active');
-    $navigation.classList.toggle('_active');
-    document.body.classList.toggle('_lock');
+    this.classList.toggle(active);
+    $navigation.classList.toggle(active);
+    document.body.classList.toggle(lock);
 });
 $navigation.addEventListener('click', function (e) {
-    document.body.classList.toggle('_lock');
-    this.classList.toggle('_active');
-    $hamburger.classList.toggle('_active');
-
+    document.body.classList.toggle(lock);
+    this.classList.toggle(active);
+    $hamburger.classList.toggle(active);
 });
 
 ///////////////////////////////////////////////////////////////
 
 //section service
 //button connections for section service and implementation of blur for images
-let count = 0;
+
 $btnService.addEventListener('click', function (e) {
     const btn = e.target;
     //get button name
@@ -84,20 +91,20 @@ $btnService.addEventListener('click', function (e) {
 // section prices
 $pricesItems.addEventListener('click', function (e) {
     //block close opened accordion when press button 'Order'
-    if (getClosestEl('.accordion__btn', e)) return;
+    if (getClosestEl(accordionBtn, e)) return;
 
     //close all accordions except current
     [...$btnsPrices].forEach(btn => {
         if (btn !== e.target) {
             btn.classList.remove(activePrice);
-            btn.closest('.prices__item').classList.remove('price_open');
+            btn.closest('.prices__item').classList.remove(priceOpen);
         }
     });
 //logic accordion
-    if (getClosestEl('.prices__btn', e)) {
-        getClosestEl('.prices__item', e).classList.toggle('price_open');
+    if (getClosestEl(pricesBtn, e)) {
+        getClosestEl('.prices__item', e).classList.toggle(priceOpen);
         //change bg button
-        getClosestEl('.prices__btn', e).classList.toggle(activePrice);
+        getClosestEl(pricesBtn, e).classList.toggle(activePrice);
     }
 
 });
@@ -106,51 +113,44 @@ $pricesItems.addEventListener('click', function (e) {
 //section contact us
 
 $contactUs.addEventListener('click', function (e) {
-
+    //close all drop-blocks
+    [...$namesCities].forEach(city => city.classList.remove(open));
 
     if (getClosestEl(btnContact, e)) {
+        //change bg button
         getClosestEl(btnContact, e).classList.toggle(active);
+        //open cities list
         getElement(listContact).classList.toggle(active);
     }
     if (getClosestEl(listContact, e)) {
-        console.log(e.target.textContent.replace(/,\sNY/g, ''));
-        console.log(e.target.textContent);
-        getElement('.btn-contact-us__title').textContent = e.target.textContent;
-        getElement(btnContact).style.backgroundColor = ' #C1E698';
-        getElement(btnContact).classList.toggle(active);
-        getElement(listContact).classList.toggle(active);
-    }
+        let nameCity = e.target.textContent.replace(/,\sNY/g, '').toLowerCase();
+        if (e.target.textContent.toLowerCase().startsWith('new')) nameCity = 'new-york-city';
 
-    // document.querySelector('.circle').classList.add('_active');
+        getElement(btnContact).style.backgroundColor = bgButtonCity;
+        //change name city button
+        getElement('.btn-contact-us__title').textContent = e.target.textContent;
+        getElement(btnContact).classList.toggle(active);
+        //close cities list
+        getElement(listContact).classList.toggle(active);
+
+        //open drop-block
+        [...$namesCities].forEach(city => {
+            if (city.classList.contains(nameCity)) city.classList.add(open);
+        })
+    }
 });
 
-// console.log(
-//     `
-// Вёрстка соответствует макету. Ширина экрана 768px +24
-// блок <header> +2
-// секция welcome +3
-// секция about +4
-// секция service +4
-// секция prices +4
-// секция contacts +4
-// блок <footer> + 3
-// Вёрстка соответствует макету. Ширина экрана 380px +24
-// блок <header> +2
-// секция welcome +3
-// секция about +4
-// секция service +4
-// секция prices +4
-// секция contacts +4
-// блок <footer> + 3
-// Ни на одном из разрешений до 320px включительно не появляется горизонтальная полоса прокрутки. Весь контент страницы при этом сохраняется: не обрезается и не удаляется +15
-// нет полосы прокрутки при ширине страницы от 1440рх до 380px +7
-// нет полосы прокрутки при ширине страницы от 380px до 320рх +8
-// На ширине экрана 380рх и меньше реализовано адаптивное меню +22 (Допускается появление адаптивного меня на ширине более 380, но не допускается на ширине более 770px)
-// при ширине страницы 380рх панель навигации скрывается, появляется бургер-иконка +2
-// при нажатии на бургер-иконку плавно появляется адаптивное меню +4
-// адаптивное меню соответствует цветовой схеме макета +4
-// при нажатии на крестик адаптивное меню плавно скрывается уезжая за экран +4
-// ссылки в адаптивном меню работают, обеспечивая плавную прокрутку по якорям +4
-// при клике по ссылке в адаптивном меню адаптивное меню плавно скрывается, также скрытие меню происходит если сделать клик вне данного окна +4
-// Баллы: 75
-// `)
+console.log(
+    `
+При нажатии на кнопки:Gardens,Lawn,Planting происходит смена фокуса на услугах в разделе service +50
+При выборе одной услуги (нажатии одной кнопки), остальные карточки услуг принимают эффект blur, выбранная услуга остается неизменной + 20
+Пользователь может нажать одновременно две кнопки услуги, тогда эта кнопка тоже принимает стиль активной и карточки с именем услуги выходят из эффекта blur. При этом пользователь не может нажать одновременно все три кнопки услуг. При повторном нажатии на активную кнопку она деактивируется (становится неактивной) а привязанные к ней позиции возвращаются в исходное состояние (входит в состяние blur если есть еще активная кнопка или же перестають быть в блюре если это была единственная нажатая кнопка). +20
+Анимации плавного перемещения кнопок в активное состояние и карточек услуг в эффект blur +10
+Accordion в секции prices реализация 3-х выпадающих списков об услугах и ценах + 50
+При нажатии на dropdown кнопку появляется описание тарифов цен в соответствии с макетом. Внутри реализована кнопка order, которая ведет на секцию contacts, при нажатии на нее Accordion все еще остается открытым. +25
+Пользователь может самостоятельно закрыть содержимое нажав на кнопку dropup, но не может одновременно открыть все тарифы услуг, при открытии нового тарифа предыдущее автоматически закрывается. +25
+В разделе contacts реализован select с выбором городов +25
+В зависимости от выбора пользователя появляется блок с адресом и телефоном офиса в определенном городе +15
+При нажатии на кнопку Call us реализован вызов по номеру, который соответствует выбранному городу +10
+Итого: 125 баллов.
+`)
