@@ -86,13 +86,14 @@
 }
 
 .card__button {
+  display: inline-block;
   @extend %font-family-beta;
   @include font($size: 1rem, $height: 1.3rem, $weight: $bold);
-  padding: 7px 29px;
-  width: 122px;
+  padding: 7px 61px;
   border-radius: 5px;
   border: 1px solid $color-beta;
   background-color: inherit;
+  text-align: center;
 }
 
 //for buttons in section service

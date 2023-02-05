@@ -80,6 +80,11 @@
   @include font($size: 1.6rem, $height: 4rem);
   color: $color-alpha;
   padding: 27px 35px 31px;
+  display: none;
+
+  &.list_active {
+    display: block;
+  }
 
   & li {
     padding-left: 6px;
@@ -96,6 +101,11 @@
 .drop-block {
   color: $color-text-secondary;
   @include font($size: 1.6rem, $height: 4rem);
+  display: none;
+
+  &.drop-block_open {
+    display: block;
+  }
 }
 
 .drop-block__card {
@@ -104,11 +114,35 @@
   border-radius: 20px;
   background-color: $color-background;
   border: 1px solid #000;
-  padding: 17px 76px 32px 33px;
+  padding: 17px 33px 32px;
   margin-top: 47px;
+
+  & a {
+    margin-top: 24px;
+    align-self: center;
+  }
 }
 
-.card__button {
-  margin-top: 24px;
-  align-self: center;
+.card {
+  font-size: 0;
+
+  & span:nth-child(n) {
+    display: inline-block;
+    font-size: 1.6rem;
+  }
+
+  & span:first-child {
+    width: 41%;
+    color: #000;
+
+    &:after {
+      content: ':';
+    }
+  }
+
+  & span:last-child {
+    width: 56%;
+    padding-left: 3%;
+  }
 }
+

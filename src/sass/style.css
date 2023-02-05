@@ -480,15 +480,16 @@ h3 {
   background-color: #D6E7D2; }
 
 .card__button {
+  display: inline-block;
   font-style: normal;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.3rem;
-  padding: 7px 29px;
-  width: 122px;
+  padding: 7px 61px;
   border-radius: 5px;
   border: 1px solid #E06733;
-  background-color: inherit; }
+  background-color: inherit;
+  text-align: center; }
 
 .btn_active {
   background-color: #E06733;
@@ -1183,7 +1184,10 @@ h3 {
   font-size: 1.6rem;
   line-height: 4rem;
   color: #499A18;
-  padding: 27px 35px 31px; }
+  padding: 27px 35px 31px;
+  display: none; }
+  .contact-us__list.list_active {
+    display: block; }
   .contact-us__list li {
     padding-left: 6px; }
   .contact-us__list li:hover {
@@ -1196,7 +1200,10 @@ h3 {
   font-style: normal;
   font-weight: 400;
   font-size: 1.6rem;
-  line-height: 4rem; }
+  line-height: 4rem;
+  display: none; }
+  .drop-block.drop-block_open {
+    display: block; }
 
 .drop-block__card {
   display: flex;
@@ -1204,11 +1211,24 @@ h3 {
   border-radius: 20px;
   background-color: #EDF2EC;
   border: 1px solid #000;
-  padding: 17px 76px 32px 33px;
+  padding: 17px 33px 32px;
   margin-top: 47px; }
+  .drop-block__card a {
+    margin-top: 24px;
+    align-self: center; }
 
-.card__button {
-  margin-top: 24px;
-  align-self: center; }
+.card {
+  font-size: 0; }
+  .card span:nth-child(n) {
+    display: inline-block;
+    font-size: 1.6rem; }
+  .card span:first-child {
+    width: 41%;
+    color: #000; }
+    .card span:first-child:after {
+      content: ':'; }
+  .card span:last-child {
+    width: 56%;
+    padding-left: 3%; }
 
 /*# sourceMappingURL=style.css.map */
