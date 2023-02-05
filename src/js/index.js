@@ -1,3 +1,7 @@
+//functions
+const getElement = selector => document.querySelector(selector);
+const getClosestEl = (selector, event) => event.target.closest(selector);
+
 //constants
 
 //for hamburger
@@ -14,9 +18,16 @@ const $serviceItems = document.querySelectorAll('.service__item');
 const activePrice = 'prices__btn_active';
 const $pricesItems = document.querySelector('.prices__items');
 const $btnsPrices = $pricesItems.querySelectorAll('.prices__btn');
-//const $btnOrder=document.querySelector('.accordion__btn');
+
+//for section contact us
+const $contactUs = document.querySelector('.contact-us__btn');
+const active = '_active';
+const btnContact = '.btn-contact-us';
+const listContact = '.contact-us__list';
+const $namesCities = document.querySelectorAll('.drop-block');
 
 
+///////////////////////////////////////////////////////////////////////////////
 
 //hamburger animation
 
@@ -34,6 +45,7 @@ $navigation.addEventListener('click', function (e) {
 
 ///////////////////////////////////////////////////////////////
 
+//section service
 //button connections for section service and implementation of blur for images
 let count = 0;
 $btnService.addEventListener('click', function (e) {
@@ -69,10 +81,10 @@ $btnService.addEventListener('click', function (e) {
 });
 //////////////////////////////////////////////////////////////
 
-// prices
+// section prices
 $pricesItems.addEventListener('click', function (e) {
     //block close opened accordion when press button 'Order'
-    if (e.target.closest('.accordion__btn')) return;
+    if (getClosestEl('.accordion__btn', e)) return;
 
     //close all accordions except current
     [...$btnsPrices].forEach(btn => {
@@ -82,15 +94,35 @@ $pricesItems.addEventListener('click', function (e) {
         }
     });
 //logic accordion
-    if (e.target.closest('.prices__btn')) {
-        e.target.closest('.prices__item').classList.toggle('price_open');
+    if (getClosestEl('.prices__btn', e)) {
+        getClosestEl('.prices__item', e).classList.toggle('price_open');
         //change bg button
-        e.target.closest('.prices__btn').classList.toggle(activePrice);
+        getClosestEl('.prices__btn', e).classList.toggle(activePrice);
     }
 
 });
 /////////////////////////////////////////////////////////////
 
+//section contact us
+
+$contactUs.addEventListener('click', function (e) {
+
+
+    if (getClosestEl(btnContact, e)) {
+        getClosestEl(btnContact, e).classList.toggle(active);
+        getElement(listContact).classList.toggle(active);
+    }
+    if (getClosestEl(listContact, e)) {
+        console.log(e.target.textContent.replace(/,\sNY/g, ''));
+        console.log(e.target.textContent);
+        getElement('.btn-contact-us__title').textContent = e.target.textContent;
+        getElement(btnContact).style.backgroundColor = ' #C1E698';
+        getElement(btnContact).classList.toggle(active);
+        getElement(listContact).classList.toggle(active);
+    }
+
+    // document.querySelector('.circle').classList.add('_active');
+});
 
 // console.log(
 //     `

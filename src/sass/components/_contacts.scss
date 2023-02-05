@@ -1,3 +1,4 @@
+
 .contact-us {
   background-color: $color-background;
   padding: 5.3rem 10.9rem 0 10.9rem;
@@ -75,14 +76,36 @@
   @include font($size: 2rem, $height: 4rem)
 }
 
+.accord-object-contact {
+  //allow get event from svg
+  pointer-events: none;
+  @extend %transition;
+
+  .btn-contact-us._active & {
+    transform: rotate(180deg);
+  }
+}
+//change on click background of icon in cities button
+.circle._active {
+  fill: #8BA07E !important;
+}
+
 //accordion
 .contact-us__list {
   @include font($size: 1.6rem, $height: 4rem);
   color: $color-alpha;
+  background-color: $color-list-cities;
   padding: 27px 35px 31px;
+
+  display: none;
+
+  &._active {
+    display: block;
+  }
 
   & li {
     padding-left: 6px;
+    border-bottom: 1px solid #D9D9D9;
   }
 
   & li:hover {
@@ -91,3 +114,53 @@
     cursor: pointer;
   }
 }
+
+//block for city
+.drop-block {
+  color: $color-text-secondary;
+  @include font($size: 1.6rem, $height: 4rem);
+  display: none;
+
+  &._open {
+    display: block;
+  }
+}
+
+.drop-block__card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: $color-background;
+  border: 1px solid #000;
+  padding: 17px 33px 32px;
+  margin-top: 47px;
+
+  & a {
+    margin-top: 24px;
+    align-self: center;
+  }
+}
+
+.card {
+  font-size: 0;
+
+  & span:nth-child(n) {
+    display: inline-block;
+    font-size: 1.6rem;
+  }
+
+  & span:first-child {
+    width: 41%;
+    color: #000;
+
+    &:after {
+      content: ':';
+    }
+  }
+
+  & span:last-child {
+    width: 56%;
+    padding-left: 3%;
+  }
+}
+
