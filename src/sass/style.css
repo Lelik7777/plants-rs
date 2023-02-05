@@ -333,7 +333,7 @@ body, h1, h3, .btn-1, .welcome__content, .prices__title, .btn-contact-us__title 
 h2, .btn-2, .card__button, .header, .logo-text {
   font-family: 'Inika', 'Verdana', sans-serif; }
 
-.btn-1:hover, .github:hover, .footer__ref:hover, .navigation__link, .accord-object, .prices__content-right button:hover {
+.btn-1:hover, .github:hover, .footer__ref:hover, .navigation__link, .accord-object, .prices__content-right button:hover, .accord-object-contact {
   transition: all .5s ease-out; }
 
 html {
@@ -469,9 +469,13 @@ h3 {
   flex-grow: 1;
   padding: 0.8rem 3.5rem 0.4rem 2.6rem;
   border: none;
+  color: #717171;
   background: #D6E7D2;
+  transition: background-color 0.3s;
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
   cursor: pointer; }
+  .btn-contact-us._active {
+    background-color: #C1E698; }
   @media (max-width: 380px) {
     .btn-contact-us {
       padding: 0.5rem 2.0rem; } }
@@ -1178,18 +1182,28 @@ h3 {
   font-size: 2rem;
   line-height: 4rem; }
 
+.accord-object-contact {
+  pointer-events: none; }
+  .btn-contact-us._active .accord-object-contact {
+    transform: rotate(180deg); }
+
+.circle._active {
+  fill: #8BA07E !important; }
+
 .contact-us__list {
   font-style: normal;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 4rem;
   color: #499A18;
+  background-color: #DCE9D9;
   padding: 27px 35px 31px;
   display: none; }
-  .contact-us__list.list_active {
+  .contact-us__list._active {
     display: block; }
   .contact-us__list li {
-    padding-left: 6px; }
+    padding-left: 6px;
+    border-bottom: 1px solid #D9D9D9; }
   .contact-us__list li:hover {
     color: #717171;
     border-bottom: 1px solid #717171;
@@ -1202,7 +1216,7 @@ h3 {
   font-size: 1.6rem;
   line-height: 4rem;
   display: none; }
-  .drop-block.drop-block_open {
+  .drop-block._open {
     display: block; }
 
 .drop-block__card {

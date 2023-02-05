@@ -113,6 +113,7 @@
 
 .accord-object {
   margin-left: 5.4rem;
+  //позволяет проводить события
   pointer-events: none;
   @extend %transition;
   @include media-mobile {
