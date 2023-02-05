@@ -66,15 +66,23 @@
   }
 }
 
+//section contacts
 .btn-contact-us {
   @include flex;
   max-width: 45.0rem;
   flex-grow: 1;
   padding: 0.8rem 3.5rem 0.4rem 2.6rem;
   border: none;
+  color: $color-text-secondary;
   background: $color-btn-contact;
+  transition: background-color 0.3s;
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
   cursor: pointer;
+
+  &._active {
+    background-color: $color-button-city;
+  }
+
   @include media-mobile {
     padding: 0.5rem 2.0rem;
   }
@@ -82,6 +90,17 @@
 
 .prices__btn_active {
   background-color: $color-btn-contact;
+}
+
+.card__button {
+  display: inline-block;
+  @extend %font-family-beta;
+  @include font($size: 1rem, $height: 1.3rem, $weight: $bold);
+  padding: 7px 61px;
+  border-radius: 5px;
+  border: 1px solid $color-beta;
+  background-color: inherit;
+  text-align: center;
 }
 
 //for buttons in section service
