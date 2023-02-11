@@ -1,3 +1,5 @@
+import {Model1, showModel1,NewClass} from './js/Module1';
+showModel1();
 //functions
 const getElement = selector => document.querySelector(selector);
 const getClosestEl = (selector, event) => event.target.closest(selector);
@@ -23,7 +25,7 @@ const pricesBtn = '.prices__btn';
 const priceOpen = 'price_open';
 const $pricesItems = document.querySelector('.prices__items');
 const $btnsPrices = $pricesItems.querySelectorAll('.prices__btn');
-
+$pricesItems.classList.add('home','leave','life');
 
 //for section contact us
 const $contactUs = document.querySelector('.contact-us__btn');
@@ -153,4 +155,7 @@ Accordion в секции prices реализация 3-х выпадающих 
 В зависимости от выбора пользователя появляется блок с адресом и телефоном офиса в определенном городе +15
 При нажатии на кнопку Call us реализован вызов по номеру, который соответствует выбранному городу +10
 Итого: 125 баллов.
-`)
+`);
+console.log('hello,Rolling Scopes');
+const bob=new NewClass('bob',45);
+bob.getAge();
