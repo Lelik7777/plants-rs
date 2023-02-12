@@ -13,16 +13,20 @@
 
     <!--favicon-->
     <link rel="icon" type="image/x-icon" href="./src/img/logo/logo_vector.svg">
-    <link rel="stylesheet" href="./src/sass/style.css">
+    <!--    после установки и настройки вебпака это уже не нужно,если используем style-loader-->
+    <!--    <link rel="stylesheet" href="./src/sass/style.css">-->
+    <!--    если же вместо style-loader use MiniCssExtractPlugin.loader,то тогда нужно сделать линк на файл css,который сгенерил вебпак-->
+<!--    <link rel="stylesheet" href="./dist/style.css">-->
+<!-- комментим ссылку на стили после того,как подключили плагин вебпака HtmlWebpackPlugin-->
     <title>Plants-rs</title>
 </head>
 <body>
 <header class="header">
     <div class="wrapper header__wrapper">
         <div class="header__logo">
-            <object class="logo-object" data="src/img/logo/logo_vector.svg" type="image/svg+xml">
+            <object class="logo-object" data="./src/img/logo/logo_vector.svg" type="image/svg+xml">
                 <!--if browser don`t support svg-->
-                <img src="src/img/logo/logo_vector.png" alt="logo">
+                <img src="./src/img/logo/logo_vector.png" alt="logo">
             </object>
             <span class="logo-text">Plants</span>
         </div>
@@ -87,7 +91,7 @@
                     a galley of type and scrambled it to make a type specimen book. It has survived not only five
                     centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
             </div>
-            <img class="about__img" src="src/img/about/houseplant%201.png" alt="house plant">
+            <img class="about__img" src="./src/img/about/houseplant%201.png" alt="house plant">
         </div>
     </section>
     <section class="service" id="service">
@@ -104,9 +108,9 @@
                 <div class=" service__column  layout-3-column">
                     <div class="service__item garden">
                         <picture class="service__img">
-                            <source media="(max-width:768px)" srcset="src/img/service/service-1-tablet.png">
+                            <source media="(max-width:768px)" srcset="./src/img/service/service-1-tablet.png">
 
-                            <img src="src/img/service/service-garden-woman.png"
+                            <img src="./src/img/service/service-garden-woman.png"
                                  alt="garden care woman">
                         </picture>
 
@@ -115,8 +119,8 @@
                     </div>
                     <div class="service__item planting">
                         <picture>
-                            <source media="(max-width:768px)" srcset="src/img/service/service-2-tablet.png">
-                            <img class="service__img" src="src/img/service/service-planting-fruit.png"
+                            <source media="(max-width:768px)" srcset="./src/img/service/service-2-tablet.png">
+                            <img class="service__img" src="./src/img/service/service-planting-fruit.png"
                                  alt="planting fruit">
                         </picture>
                         <h3 class="title service__title-3">Planting</h3>
@@ -124,16 +128,16 @@
                     </div>
                     <div class="service__item lawn">
                         <picture>
-                            <source media="(max-width:768px)" srcset="src/img/service/service-3-tablet.png">
-                            <img class="service__img" src="src/img/service/service-lawn.png" alt="lawn care">
+                            <source media="(max-width:768px)" srcset="./src/img/service/service-3-tablet.png">
+                            <img class="service__img" src="./src/img/service/service-lawn.png" alt="lawn care">
                         </picture>
                         <h3 class="title service__title-3">Lawn care</h3>
                         <p class="service__text">Lorem Ipsum has been the industry</p>
                     </div>
                     <div class="service__item planting">
                         <picture>
-                            <source media="(max-width:768px)" srcset="src/img/service/service-4-tablet.png">
-                            <img class="service__img" src="src/img/service/service-planting-girl.png"
+                            <source media="(max-width:768px)" srcset="./src/img/service/service-4-tablet.png">
+                            <img class="service__img" src="./src/img/service/service-planting-girl.png"
                                  alt="planting girl">
                         </picture>
                         <h3 class="title service__title-3">Planting</h3>
@@ -141,8 +145,8 @@
                     </div>
                     <div class="service__item garden">
                         <picture>
-                            <source media="(max-width:768px)" srcset="src/img/service/service-5-tablet.png">
-                            <img class="service__img" src="src/img/service/service-garden-flowerpots.png"
+                            <source media="(max-width:768px)" srcset="./src/img/service/service-5-tablet.png">
+                            <img class="service__img" src="./src/img/service/service-garden-flowerpots.png"
                                  alt="garden care flowerpots">
                         </picture>
                         <h3 class="title service__title-3">Garden care</h3>
@@ -150,8 +154,8 @@
                     </div>
                     <div class="service__item planting">
                         <picture>
-                            <source media="(max-width:768px)" srcset="src/img/service/service-6-tablet.png">
-                            <img class="service__img" src="src/img/service/service-planting-cactus.png"
+                            <source media="(max-width:768px)" srcset="./src/img/service/service-6-tablet.png">
+                            <img class="service__img" src="./src/img/service/service-planting-cactus.png"
                                  alt="planting cactus">
                         </picture>
                         <h3 class="title service__title-3">Planting</h3>
@@ -169,9 +173,9 @@
                     <li class="prices__item basics">
                         <button class="prices__btn">
                             <span class="title btn-title">Basics</span>
-                            <object class="accord-object" data="src/img/icons/accordion_btn.svg" type="image/svg+xml">
+                            <object class="accord-object" data="./src/img/icons/accordion_btn.svg" type="image/svg+xml">
                                 <!--if browser don`t support svg-->
-                                <img src="src/img/icons/accordion_btn.png" alt="accordion">
+                                <img src="./src/img/icons/accordion_btn.png" alt="accordion">
                             </object>
                         </button>
                         <div class="item__accordion">
@@ -192,9 +196,9 @@
                     <li class="prices__item standart">
                         <button class="prices__btn">
                             <span class="title btn-title">Standard</span>
-                            <object class="accord-object" data="src/img/icons/accordion_btn.svg" type="image/svg+xml">
+                            <object class="accord-object" data="./src/img/icons/accordion_btn.svg" type="image/svg+xml">
                                 <!--if browser don`t support svg-->
-                                <img src="src/img/icons/accordion_btn.png" alt="accordion">
+                                <img src="./src/img/icons/accordion_btn.png" alt="accordion">
                             </object>
                         </button>
                         <!-- added block accordion-->
@@ -216,9 +220,9 @@
                     <li class="prices__item pro">
                         <button class="prices__btn">
                             <span class="title btn-title">Pro care</span>
-                            <object class="accord-object" data="src/img/icons/accordion_btn.svg" type="image/svg+xml">
+                            <object class="accord-object" data="./src/img/icons/accordion_btn.svg" type="image/svg+xml">
                                 <!--if browser don`t support svg-->
-                                <img src="src/img/icons/accordion_btn.png" alt="accordion">
+                                <img src="./src/img/icons/accordion_btn.png" alt="accordion">
                             </object>
                         </button>
                         <div class="item__accordion">
@@ -247,13 +251,13 @@
                 <button class="btn-2  btn-2_bordered">
                     Contact us
                 </button>
-                <img class="prices__img" src="src/img/prices/leafs.png" alt="leaf">
+                <img class="prices__img" src="./src/img/prices/leafs.png" alt="leaf">
             </div>
         </div>
     </section>
     <section class="contact-us" id="contacts">
         <div class="wrapper contact-us__wrapper">
-            <img class="contact-us__img" src="src/img/contacts/contact_woman%201.png" alt="woman">
+            <img class="contact-us__img" src="./src/img/contacts/contact_woman%201.png" alt="woman">
             <div class="contact-us__content">
                 <h2 class="title contact-us__title">
                     Contact us
@@ -261,10 +265,10 @@
                 <div class="contact-us__btn">
                     <button class="btn-contact-us">
                         <span class="btn-contact-us__title">City</span>
-                        <object class="accord-object-contact" data="src/img/icons/accordion_btn-contact.svg"
+                        <object class="accord-object-contact" data="./src/img/icons/accordion_btn-contact.svg"
                                 type="image/svg+xml">
                             <!--if browser don`t support svg-->
-                            <img src="src/img/icons/accordion_btn-contact.png" alt="accordion">
+                            <img src="./src/img/icons/accordion_btn-contact.png" alt="accordion">
                         </object>
                     </button>
                     <!--                    add 04.02.23-->
@@ -370,22 +374,23 @@
         </div>
         <ul class="footer__list">
             <li class="footer__item">
-                <a class="footer__link" href="#"><img src="src/img/icons/inst%201.svg" alt="instagram"></a>
+                <a class="footer__link" href="#"><img src="./src/img/icons/inst%201.svg" alt="instagram"></a>
             </li>
             <li class="footer__item">
-                <a class="footer__link" href="#"><img src="src/img/icons/fb%201.svg" alt="facebook"></a>
+                <a class="footer__link" href="#"><img src="./src/img/icons/fb%201.svg" alt="facebook"></a>
             </li>
             <li class="footer__item">
-                <a class="footer__link" href="#"><img src="src/img/icons/tw%201.svg" alt="twitter"></a>
+                <a class="footer__link" href="#"><img src="./src/img/icons/tw%201.svg" alt="twitter"></a>
             </li>
             <li class="footer__item">
-                <a class="footer__link" href="#"><img src="src/img/icons/pinterest%201.svg" alt="pinterest"></a>
+                <a class="footer__link" href="#"><img src="./src/img/icons/pinterest%201.svg" alt="pinterest"></a>
             </li>
         </ul>
     </div>
 </footer>
 
 <div class="parent__circle"></div>
-<script src="./dist/script.js"></script>
+<!-- комментим подключение скрипта после того, как подключили плагин вебпака HtmlWebpackPlugin-->
+<!--<script src="./dist/script.js"></script>-->
 </body>
 </html>
