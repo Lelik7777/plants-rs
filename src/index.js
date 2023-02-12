@@ -1,4 +1,8 @@
-import {Model1, showModel1,NewClass} from './js/Module1';
+import {showModel1, NewClass} from './js/Module1';
+//это необходимо для того,чтобы вебпак подтянул стили,поскольку мы удали из html <link rel="stylesheet" href="./src/sass/style.css">
+//import './sass/style.scss';
+//чтобы не импортить стили напрямую в js файл,лучше в webpack.config.js прописать вторую точку входа(in  entry: ['./src/index.js','.src/sass/style.scss'])
+
 showModel1();
 //functions
 const getElement = selector => document.querySelector(selector);
@@ -25,7 +29,7 @@ const pricesBtn = '.prices__btn';
 const priceOpen = 'price_open';
 const $pricesItems = document.querySelector('.prices__items');
 const $btnsPrices = $pricesItems.querySelectorAll('.prices__btn');
-$pricesItems.classList.add('home','leave','life');
+$pricesItems.classList.add('home', 'leave', 'life');
 
 //for section contact us
 const $contactUs = document.querySelector('.contact-us__btn');
@@ -157,5 +161,5 @@ Accordion в секции prices реализация 3-х выпадающих 
 Итого: 125 баллов.
 `);
 console.log('hello,Rolling Scopes');
-const bob=new NewClass('bob',45);
+const bob = new NewClass('bob', 45);
 bob.getAge();

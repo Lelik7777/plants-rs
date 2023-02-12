@@ -45,3 +45,4 @@ Thumbs.db
 *.iml
 *.ipr
 node_modules
+dist
