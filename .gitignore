@@ -44,3 +44,5 @@ Thumbs.db
 .metadata
 *.iml
 *.ipr
+node_modules
+dist
