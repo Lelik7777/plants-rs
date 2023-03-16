@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--for support IE9 or IE8-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--google fonts: Inika 400,700 and Inter 400,700-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@300;400;700&display=swap"
+          rel="stylesheet">
+
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="img/logo_vector.1ba4521af9cfe497a43e.svg">
+    <!--    после установки и настройки вебпака это уже не нужно,если используем style-loader-->
+    <!--    <link rel="stylesheet" href="./src/sass/style.css">-->
+    <!--    если же вместо style-loader use MiniCssExtractPlugin.loader,то тогда нужно сделать линк на файл css,который сгенерил вебпак-->
+<!--    <link rel="stylesheet" href="./dist/style.css">-->
+<!-- комментим ссылку на стили после того,как подключили плагин вебпака HtmlWebpackPlugin-->
+    <title>Plants-rs</title>
+<script defer src="script.js"></script><link href="style.css" rel="stylesheet"></head>
+<body>
+<header class="header">
+    <div class="wrapper header__wrapper">
+        <div class="header__logo">
+            <object class="logo-object" data="img/logo_vector.1ba4521af9cfe497a43e.svg" type="image/svg+xml">
+                <!--if browser don`t support svg-->
+                <img src="img/logo_vector.d1a1804151b02e798511.png" alt="logo">
+            </object>
+            <span class="logo-text">Plants</span>
+        </div>
+        <nav class="header__navigation">
+            <ul class="navigation">
+                <li class="navigation__item ">
+                    <a class="navigation__link" href="#home">Home</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#about-us">About us</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#service">Service</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#prices">Price</a>
+                </li>
+                <li class="navigation__item contacts">
+                    <a class="navigation__link" href="#contacts">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- hamburger       -->
+        <span class="header__hamburger hamburger">
+            <span class="hamburger__line"></span>
+        </span>
+    </div>
+</header>
+<main>
+    <section class="welcome">
+        <div class="wrapper welcome__wrapper">
+            <picture>
+                <source media="(max-width:768px)" srcset="img/welcome-leafs-tablet.f5e52a1fbc29b69736da.png">
+                <img class="image-welcome" src="img/leafs.bec29d0507cc9e90ed4f.png" alt="leaf">
+            </picture>
+            <div class="welcome__content">
+                <h1 class="welcome__title">
+                    We grow
+                    <span class="title_emphasized">plants</span>
+                    and give you oxygen
+                </h1>
+                <p class="welcome__text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s.
+                </p>
+                <div class="welcome__btn">
+                    <button class="btn-1  btn-1_bordered">LEARN MORE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about-us">
+        <div class="wrapper about__wrapper">
+            <div class="about__content">
+                <h2 class="title about__title">
+                    We are
+                    <span class="title-about_emphasized">professional experienced</span>
+                    gardeners
+                </h2>
+                <p class="about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                    a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+            </div>
+            <img class="about__img" src="img/houseplant 1.9874637c92b29d86db3f.png" alt="house plant">
+        </div>
+    </section>
+    <section class="service" id="service">
+        <div class="wrapper">
+            <div class="service__content">
+                <h2 class="title service__title-2">Service and our projects</h2>
+                <div class="service__btns">
+                    <button class="btn-2 btn-2_bordered service__btn btn__garden">Gardens</button>
+                    <button class="btn-2 btn-2_bordered service__btn btn__lawn">Lawn</button>
+                    <button class="btn-2 btn-2_bordered service__btn btn__planting">Planting</button>
+                </div>
+            </div>
+            <div class="service__container">
+                <div class=" service__column  layout-3-column">
+                    <div class="service__item garden">
+                        <picture class="service__img">
+                            <source media="(max-width:768px)" srcset="img/service-1-tablet.67adcefa8de4455c936c.png">
+
+                            <img src="img/service-garden-woman.f913052a758af4b8e098.png"
+                                 alt="garden care woman">
+                        </picture>
+
+                        <h3 class="title service__title-3">Carden care</h3>
+                        <p class="service__text">Lorem Ipsum has been the industry</p>
+                    </div>
+                    <div class="service__item planting">
+                        <picture>
+                            <source media="(max-width:768px)" srcset="img/service-2-tablet.ef1849d3f085a795e5af.png">
+                            <img class="service__img" src="img/service-planting-fruit.73137e83fda28d52cd96.png"
+                                 alt="planting fruit">
+                        </picture>
+                        <h3 class="title service__title-3">Planting</h3>
+                        <p class="service__text">Lorem Ipsum has been the industry</p>
+                    </div>
+                    <div class="service__item lawn">
+                        <picture>
+                            <source media="(max-width:768px)" srcset="img/service-3-tablet.d7125e47e061d7b3c6a1.png">
+                            <img class="service__img" src="img/service-lawn.2ee46f230dea8b65a1be.png" alt="lawn care">
+                        </picture>
+                        <h3 class="title service__title-3">Lawn care</h3>
+                        <p class="service__text">Lorem Ipsum has been the industry</p>
+                    </div>
+                    <div class="service__item planting">
+                        <picture>
+                            <source media="(max-width:768px)" srcset="img/service-4-tablet.4cad8f2fca622e0cf5ae.png">
+                            <img class="service__img" src="img/service-planting-girl.27b23536a6306e174006.png"
+                                 alt="planting girl">
+                        </picture>
+                        <h3 class="title service__title-3">Planting</h3>
+                        <p class="service__text">Lorem Ipsum has been the industry</p>
+                    </div>
+                    <div class="service__item garden">
+                        <picture>
+                            <source media="(max-width:768px)" srcset="img/service-5-tablet.5988a5cc746aaa2e0e11.png">
+                            <img class="service__img" src="img/service-garden-flowerpots.27eecef03c96cffe1278.png"
+                                 alt="garden care flowerpots">
+                        </picture>
+                        <h3 class="title service__title-3">Garden care</h3>
+                        <p class="service__text">Lorem Ipsum has been the industry</p>
+                    </div>
+                    <div class="service__item planting">
+                        <picture>
+                            <source media="(max-width:768px)" srcset="img/service-6-tablet.ee1d57c82656213c20cf.png">
+                            <img class="service__img" src="img/service-planting-cactus.9e9dd401130c19e2b349.png"
+                                 alt="planting cactus">
+                        </picture>
+                        <h3 class="title service__title-3">Planting</h3>
+                        <p class="service__text">Lorem Ipsum has been the industry</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="prices" id="prices">
+        <div class="wrapper prices__wrapper">
+            <div class="prices__content-left">
+                <h2 class="title prices__title title-left">Prices</h2>
+                <ul class="prices__items">
+                    <li class="prices__item basics">
+                        <button class="prices__btn">
+                            <span class="title btn-title">Basics</span>
+                            <object class="accord-object" data="img/accordion_btn.ffcdd9d9021090a7f50c.svg" type="image/svg+xml">
+                                <!--if browser don`t support svg-->
+                                <img src="img/accordion_btn.5a3c2ed08de7247742df.png" alt="accordion">
+                            </object>
+                        </button>
+                        <div class="item__accordion">
+                            <p class=" accordion__text">Release of Letraset sheets containing Lorem Ipsum passages, and
+                                more recently</p>
+                            <p class="accordion__price">
+                                <span>&dollar;</span>
+                                <span>15</span>
+                                &sol; per hour
+                            </p>
+                            <a href="#contacts">
+                                <span class="accordion__btn">
+                                    Order
+                                </span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="prices__item standart">
+                        <button class="prices__btn">
+                            <span class="title btn-title">Standard</span>
+                            <object class="accord-object" data="img/accordion_btn.ffcdd9d9021090a7f50c.svg" type="image/svg+xml">
+                                <!--if browser don`t support svg-->
+                                <img src="img/accordion_btn.5a3c2ed08de7247742df.png" alt="accordion">
+                            </object>
+                        </button>
+                        <!-- added block accordion-->
+                        <div class="item__accordion">
+                            <p class=" accordion__text">Release of Letraset sheets containing Lorem Ipsum passages, and
+                                more recently</p>
+                            <p class="accordion__price">
+                                <span>&dollar;</span>
+                                <span>25</span>
+                                &sol; per hour
+                            </p>
+                            <a href="#contacts">
+                                <span class="accordion__btn">
+                                    Order
+                                </span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="prices__item pro">
+                        <button class="prices__btn">
+                            <span class="title btn-title">Pro care</span>
+                            <object class="accord-object" data="img/accordion_btn.ffcdd9d9021090a7f50c.svg" type="image/svg+xml">
+                                <!--if browser don`t support svg-->
+                                <img src="img/accordion_btn.5a3c2ed08de7247742df.png" alt="accordion">
+                            </object>
+                        </button>
+                        <div class="item__accordion">
+                            <p class=" accordion__text">Release of Letraset sheets containing Lorem Ipsum passages, and
+                                more recently</p>
+                            <p class="accordion__price">
+                                <span>&dollar;</span>
+                                <span>35</span>
+                                &sol; per hour
+                            </p>
+                            <a href="#contacts">
+                                <span class="accordion__btn">
+                                    Order
+                                </span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="prices__content-right">
+                <h2 class="title prices__title title-right">
+                    Our best
+                    <span class="title_emphasized">gardeners </span>are</h2>
+                <h2 class="prices__title title-right-2">ready to help you</h2>
+
+                <button class="btn-2  btn-2_bordered">
+                    Contact us
+                </button>
+                <img class="prices__img" src="img/leafs.8944dbd3595feb9b0a07.png" alt="leaf">
+            </div>
+        </div>
+    </section>
+    <section class="contact-us" id="contacts">
+        <div class="wrapper contact-us__wrapper">
+            <img class="contact-us__img" src="img/contact_woman 1.b181a0840ec17fdc89df.png" alt="woman">
+            <div class="contact-us__content">
+                <h2 class="title contact-us__title">
+                    Contact us
+                </h2>
+                <div class="contact-us__btn">
+                    <button class="btn-contact-us">
+                        <span class="btn-contact-us__title">City</span>
+                        <object class="accord-object-contact" data="img/accordion_btn-contact.321d8b69d4657962add3.svg"
+                                type="image/svg+xml">
+                            <!--if browser don`t support svg-->
+                            <img src="img/accordion_btn-contact.df7b767cc589191a17fa.png" alt="accordion">
+                        </object>
+                    </button>
+                    <!--                    add 04.02.23-->
+                    <ul class="contact-us__list">
+                        <li>Canandaigua, NY</li>
+                        <li>New York City</li>
+                        <li>Yonkers, NY</li>
+                        <li>Sherrill, NY</li>
+                    </ul>
+                    <div class="drop-block canandaigua">
+                        <div class="drop-block__card">
+                            <div class="card card__city">
+                                <span>City</span>
+                                <span>Canandaigua, NY</span>
+                            </div>
+                            <div class="card card__phone">
+                                <span>Phone</span>
+                                <span>+1	914	678 0001</span>
+                            </div>
+                            <div class="card card__office">
+                                <span>Office address</span>
+                                <span>151 Charlotte Street</span>
+                            </div>
+                            <a href="tel:+1	914	678 0001" target="_blank">
+                                <span class="card__button">Call me</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="drop-block new-york-city">
+                        <div class="drop-block__card">
+                            <div class=" card card__city">
+                                <span>City</span>
+                                <span>New York City</span>
+                            </div>
+                            <div class=" card card__phone">
+                                <span>Phone</span>
+                                <span>+1	212	456 0002</span>
+                            </div>
+                            <div class=" card card__office">
+                                <span>Office address</span>
+                                <span>9 East 91st Street</span>
+                            </div>
+                            <a href="tel:+1	212	456 0002" target="_blank">
+                                <span class="card__button">Call me</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="drop-block yonkers">
+                        <div class="drop-block__card">
+                            <div class=" card card__city">
+                                <span>City</span>
+                                <span>Yonkers, NY</span>
+                            </div>
+                            <div class=" card card__phone">
+                                <span>Phone</span>
+                                <span>+1	914	678 0003</span>
+                            </div>
+                            <div class=" card card__office">
+                                <span>Office address</span>
+                                <span>511 Warburton Ave</span>
+                            </div>
+                            <a href="tel:+1	914	678 0003" target="_blank">
+                                <span class="card__button">Call me</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="drop-block sherrill">
+                        <div class="drop-block__card">
+                            <div class="card card__city">
+                                <span>City</span>
+                                <span>Sherrill, NY</span>
+                            </div>
+                            <div class="card card__phone">
+                                <span>Phone</span>
+                                <span>+1	315	908 0004</span>
+                            </div>
+                            <div class="card card__office">
+                                <span>Office address</span>
+                                <span>14 WEST Noyes BLVD</span>
+                            </div>
+                            <a href="tel:+1	315	908 0004" target="_blank">
+                                <span class="card__button">Call me</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="wrapper layout-3-column footer__wrapper">
+        <div class="footer__copyright">
+            <span class="copyright_item">&copy;</span>
+            <span class="copyright_item">2022</span>
+            <span class="copyright_item"><a class="github" href="https://github.com/Lelik7777"
+                                            target="_blank">github</a></span>
+        </div>
+        <div class="footer__center">
+            <a style="display: block" class="footer__ref" href=" https://rs.school/js-stage0/" target="_blank">Rolling
+                Scopes
+                School</a>
+        </div>
+        <ul class="footer__list">
+            <li class="footer__item">
+                <a class="footer__link" href="#"><img src="img/inst 1.26ad88cb4f0dd17db1aa.svg" alt="instagram"></a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link" href="#"><img src="img/fb 1.7f94c008e987c9d7f578.svg" alt="facebook"></a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link" href="#"><img src="img/tw 1.b0bea80a2a2f4c8d45be.svg" alt="twitter"></a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link" href="#"><img src="img/pinterest 1.0e65d89b38379411f2ac.svg" alt="pinterest"></a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+<div class="parent__circle"></div>
+<!-- комментим подключение скрипта после того, как подключили плагин вебпака HtmlWebpackPlugin-->
+<!--<script src="./dist/script.js"></script>-->
+</body>
+</html>

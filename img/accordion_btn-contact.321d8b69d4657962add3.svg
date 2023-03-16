@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/css" href="../../sass/style.css" ?>
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle class="circle" style="cursor:pointer" cx="8" cy="8" r="8" fill="#AEA1A1"/>
+<path d="M8.00003 8.99997L6.00002 7.00008" stroke="white" stroke-width="0.5" stroke-linecap="round"/>
+<path d="M8 9L10 7" stroke="white" stroke-width="0.5" stroke-linecap="round"/>
+</svg>
